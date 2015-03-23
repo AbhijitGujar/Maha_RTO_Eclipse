@@ -1,0 +1,137 @@
+package com.example.punerto.Activity;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import co.example.punerto.classes.Faq;
+
+import com.example.punerto.R;
+import com.example.punerto.Adapter.ExpandableListAdapter;
+
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.ExpandableListView;
+
+public class ActivityExpandableFaq  extends ActionBarActivity{
+
+	    ExpandableListAdapter listAdapter;
+	    ExpandableListView expListView;
+	    List<String> listDataHeader;
+	    HashMap<String, List<String>> listDataChild;
+	 
+	    @Override
+	    protected void onCreate(Bundle savedInstanceState) {
+	        super.onCreate(savedInstanceState);
+	        setContentView(R.layout.activity_expandable_faq);
+	 
+	        // get the listview
+	        expListView = (ExpandableListView) findViewById(R.id.lvExp);
+	 
+	        // preparing list data
+	        prepareListData();
+	 
+	        listAdapter = new ExpandableListAdapter(this, listDataHeader, listDataChild);
+	 
+	        // setting list adapter
+	        expListView.setAdapter(listAdapter);
+	    }
+	 
+	    /*
+	     * Preparing the list data
+	     */
+	    private void prepareListData() {
+			
+	        listDataHeader = new ArrayList<String>();
+	        listDataChild = new HashMap<String, List<String>>();
+	 
+	        // Adding child data
+	        listDataHeader.add("1 What is RTO?");
+	        listDataHeader.add("2 How long is a learner license valid?");
+	        listDataHeader.add("3 I have obtained a learner license in mumbai, is it valid in chennai?");
+	        
+	        listDataHeader.add("4 Remain");
+	        listDataHeader.add("5 Remain ");
+	        listDataHeader.add("6 My license is expired 2 yesr's back, do I need to get a fresh one or can I still renew it?");
+	        
+	        listDataHeader.add("7 Can I drive a motorcycle with learner license?");
+	        listDataHeader.add("8 Who is exempted from test of competence for driving license?");
+	        listDataHeader.add("9 No, driving with such licence is an offence under motor vehicle laws. ");
+	        
+	        
+	        listDataHeader.add("10 Can I drive with an expired license?");
+	        listDataHeader.add("11 Do I need to keep the documents of vehicle with me while driving?");
+	        listDataHeader.add("12 Which douments I need to produce in support of age group?");
+	        
+	        
+	        listDataHeader.add("13 Which documents I need to produce in support of Address proof?");
+	        listDataHeader.add("14 Do I need to produce original age address proof while obtaining certificate?");
+	        listDataHeader.add("15 Do I need to be present while obtaining the license?");
+	        
+	        
+	        listDataHeader.add("16 How many hours of drving instructions a motor driving school is supposed to impart to the candidateenrolled?");
+	        listDataHeader.add("17 What is difference between contract carriage and stage carriage?");
+	        listDataHeader.add("18 What is the gross vehicle weight of the vehicle?");
+	        
+	        
+	        listDataHeader.add("19 What is invalid carriage?");
+	        listDataHeader.add("20 Which are non-transport vehicles?");
+	        listDataHeader.add("21 Which are the transport vehicles?");
+	        
+	        
+	        listDataHeader.add("22 I have purchased a new car, how long I can use it without registering with R.T.O.?");
+	        listDataHeader.add("23 Can a vehicle registered in one state can be used in another state?");
+	        listDataHeader.add("24 I have lost registration certificate (RC Book) of my car where can I get new one?");
+	        
+	        listDataHeader.add("25 Can a RTO officer catch my vehicle for not paying motor vehicle taxes?");
+	        listDataHeader.add("26 I have valid P.U.C. certificate obtained from authorised P.U.C. centre. Can I be stopped on road and asked to retest my vehicle by RTO Officer?");
+	        listDataHeader.add("27 Is a police on duty at traffic junctions belongs to RTO dept.?");
+	        
+	        listDataHeader.add("28 Can I drive a vehicle without insurance?");
+	        listDataHeader.add("29 What is the validity of fitness certificate?");
+	        listDataHeader.add("30 How long is the registration certificate is valid for any vehicle?");
+	        
+	        listDataHeader.add("31 How can I renew the registration of my motorcycle and car? ");
+	        listDataHeader.add("32 Can RTO cancel the valid certificate of fitness at any time?");
+	        listDataHeader.add("33 What to do if a checking report / memo / challan is issued to my vehicle by RTO?");
+	        
+	        listDataHeader.add("34 Is there any speed limit to drive the vehicle?  ");
+	        listDataHeader.add("35 Is there any code to paint the number plates?");
+	        listDataHeader.add("36 Which are the permissible emission norms for different vehicles?");
+	        
+	        listDataHeader.add("37 How to changing /updating one's address in the driving license?");
+	        listDataHeader.add("38 How can new buyer of the car come to know about tax calculation?");
+	        listDataHeader.add("39 What is the procedure for trnasfer of ownership duplicate registration change of address for citizen?");
+	        
+	        
+	 
+	        // Adding child data
+	        List<String> top250 = new ArrayList<String>();
+	        top250.add("The Shawshank Redemption");
+	        top250.add("The Godfather");
+	        top250.add("The Godfather: Part II");
+	        top250.add("Pulp Fiction");
+	        top250.add("The Good, the Bad and the Ugly");
+	        top250.add("The Dark Knight");
+	        top250.add("12 Angry Men");
+	 
+//	        List<String> nowShowing = new ArrayList<String>();
+//	        nowShowing.add("The Conjuring");
+//	        nowShowing.add("Despicable Me 2");
+//	        nowShowing.add("Turbo");
+//	        nowShowing.add("Grown Ups 2");
+//	        nowShowing.add("Red 2");
+//	        nowShowing.add("The Wolverine");
+//	 
+//	        List<String> comingSoon = new ArrayList<String>();
+//	        comingSoon.add("2 Guns");
+//	        comingSoon.add("The Smurfs 2");
+//	        comingSoon.add("The Spectacular Now");
+//	        comingSoon.add("The Canyons");
+//	        comingSoon.add("Europa Report");
+//	 
+	        listDataChild.put(listDataHeader.get(0), top250); // Header, Child data
+//	        listDataChild.put(listDataHeader.get(1), nowShowing);
+//	        listDataChild.put(listDataHeader.get(2), comingSoon);
+	    }
+}

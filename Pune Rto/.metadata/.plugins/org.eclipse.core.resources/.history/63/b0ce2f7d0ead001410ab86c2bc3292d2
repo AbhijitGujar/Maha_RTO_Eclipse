@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Environment Tax "
+            android:textColor="#000000"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="•The environment tax has been made\n  applicable to such vehicles, per year for\n  vehicles in the transport category which have\n  completed eight years from the date of their\n  first registration per year and for non \n  transport vehicles, which have completed\n  fifteen years from the date of their first\n  registration with effect from 15.10.2010 "
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="•The proposal for approval of refund of\n  environment tax in respect of Auto Rickshaws\n  which have completed 15 years of their\n  registration stands submitted to the\n   government "
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="•The proposal for installation of Motor Vehicles\n   Inspection station  out of the appropriation of\n   environment tax recovered under section  3© of\n   the Motor Vehicles Tax Act  1958 stands\n   submitted to the Government on 9.6.2014."
+            android:textColor="#000000"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</ScrollView>

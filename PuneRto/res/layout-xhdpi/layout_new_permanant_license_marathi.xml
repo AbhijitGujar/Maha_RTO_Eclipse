@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="नमूना अर्ज"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_IntroMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="अर्ज क्र. 4"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="शुल्क"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="1.कोणत्याही वर्गातील वाहनासाठी चाचणी शुल्क रु.50/-"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="2.स्मार्ट कार्ड परवाना शुल्क रु.211/-"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="3. पोस्ट आकार रु.50/-"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+       
+
+
+
+
+        
+        <TextView
+            android:id="@+id/txt_Introduction1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="कामाचे टप्पे"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        
+      
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="1.शुल्क प्रदान"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+        
+        
+          <TextView
+            android:id="@+id/txt_IntroMenu11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="2.मोटार वाहन निरीक्षकासमोर वाहन चालवणे चाचणी"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+          
+           <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="3.सहाय्यक राज्य वाहतुक अधिकार्याची परवानगी"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+           
+           
+                <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="4.पोस्टाद्वारे परवाना मिळणे"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+          
+         
+
+
+
+
+
+                
+         
+
+        <TextView
+            android:id="@+id/txt_Introduction11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="आवश्यक दस्तऐवज"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_IntroMenu111"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="1.शिकाऊ परवाना"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_IntroMenu1111"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="2.पासपोर्ट साइज़ फोटो 3 "
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_IntroMenu111111"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="3.ड्राइविंग स्कूल तर्फे वाहतुक वाहन प्रमाणपत्र फॉर्म क्र. 5 वर"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_IntroMenu11111111"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="4.चाचणी करिता सर्व दस्तऐवज वाहनासहित सादर करणे"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+
+
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="नोंद"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="1.अर्जदाराने उपस्थित राहणे."
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+        
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="2.कायम परवाना असलेल्यांनी अर्ज 8 मध्ये आणखीन वर्ग जोडावा."
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/dialogButtonOk11"
+            android:layout_width="120dp"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="37dp"
+            android:background="@android:color/transparent"
+            android:text="       Ok      "
+            android:textColor="#0000FF"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

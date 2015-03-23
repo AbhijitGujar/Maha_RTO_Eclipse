@@ -1,0 +1,61 @@
+package com.example.punerto.Activity;
+
+import com.example.punerto.R;
+
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+public class ActivityTaxiFare extends ActionBarActivity {
+
+	Button btn_Mechanic_Meter;
+	Button btn_ElctricMeter;
+	Button btn_Taxi;
+
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_taxi_fare);
+		ActionBar actionBar = getSupportActionBar();
+		actionBar.setDisplayHomeAsUpEnabled(true);
+		actionBar.setHomeButtonEnabled(true);
+		actionBar.setTitle("Taxi Fare");
+		actionBar.setBackgroundDrawable(new ColorDrawable(Color
+				.parseColor("#5D7B2B")));
+		actionBar.show();
+
+		btn_Mechanic_Meter = (Button) findViewById(R.id.btn_MechanicMeter);
+		btn_ElctricMeter = (Button) findViewById(R.id.btn_ElectricMeter);
+		btn_Taxi = (Button) findViewById(R.id.btn_Taxi);
+
+		btn_ElctricMeter.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+
+				Intent intent = new Intent(ActivityTaxiFare.this,
+						ActivityMechanicMeter.class);
+				startActivity(intent);
+
+			}
+		});
+
+	}
+
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			this.finish();
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
+		}
+	}
+}

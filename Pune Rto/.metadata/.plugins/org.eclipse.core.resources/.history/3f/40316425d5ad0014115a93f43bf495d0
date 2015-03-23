@@ -1,0 +1,11 @@
+package com.example.punerto.Activity;
+
+public class ElectricMeter {
+
+	
+	String distance;
+	String fareShown;
+	String farePayable;
+	String dayFare;
+	String NightFare;
+}

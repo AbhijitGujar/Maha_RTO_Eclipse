@@ -1,0 +1,134 @@
+package com.example.punerto.Activity;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+
+import com.example.punerto.R;
+
+import android.content.Intent;
+import android.content.res.AssetManager;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
+import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+public class ActivityRoadSafety extends ActionBarActivity {
+
+	Button btn_trafficSign;
+	Button btn_Information;
+	Button RoadSafetyWeek;
+
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activit_road_safety);
+
+		btn_trafficSign = (Button) findViewById(R.id.btn_trafficSign);
+		btn_Information = (Button) findViewById(R.id.btn_Information);
+		RoadSafetyWeek = (Button) findViewById(R.id.btn_RoadSafetyWeek);
+		ActionBar actionBar = getSupportActionBar();
+		actionBar.setHomeButtonEnabled(true);
+		actionBar.setDisplayHomeAsUpEnabled(true);
+		actionBar.setTitle("RTO Road Safety");
+		actionBar.setBackgroundDrawable(new ColorDrawable(Color
+				.parseColor("#E45252")));
+		actionBar.show();
+		if (ActivityLanguage.lang.equals("English")) {
+
+		} else {
+
+			btn_Information.setBackgroundResource(R.drawable.marathi_info);
+			btn_trafficSign
+					.setBackgroundResource(R.drawable.marathi_traffic_sign);
+			RoadSafetyWeek
+					.setBackgroundResource(R.drawable.marathi_road_safety);
+
+		}
+
+		btn_trafficSign.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// Intent intent = new Intent(ActivityRoadSafety.this,
+				// ActivityTrafficSign.class);
+				// startActivity(intent);
+
+				Intent intent = new Intent(ActivityRoadSafety.this,
+						ActivityTrafficSign1.class);
+				startActivity(intent);
+
+			}
+		});
+
+		btn_Information.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+
+				roadSafetyinfo();
+
+			}
+
+			private void roadSafetyinfo() {
+
+				AssetManager assetManager = getAssets();
+
+				InputStream in = null;
+				OutputStream out = null;
+				File file = new File(getFilesDir(), "roadsafetyinfo.pdf");
+
+				try {
+					in = assetManager.open("roadsafetyinfo.pdf");
+					out = openFileOutput(file.getName(),
+							ActivitySchoolBus.MODE_WORLD_READABLE);
+
+					copyFile(in, out);
+					in.close();
+					in = null;
+					out.flush();
+					out.close();
+					out = null;
+				} catch (Exception e) {
+					Log.e("tag", e.getMessage());
+				}
+
+				Intent intent = new Intent(Intent.ACTION_VIEW);
+				intent.setDataAndType(
+						Uri.parse("file://" + getFilesDir()
+								+ "/roadsafetyinfo.pdf"), "application/pdf");
+				startActivity(intent);
+
+			}
+
+			private void copyFile(InputStream in, OutputStream out)
+					throws IOException {
+				byte[] buffer = new byte[1024];
+				int read;
+				while ((read = in.read(buffer)) != -1) {
+					out.write(buffer, 0, read);
+				}
+			}
+		});
+
+	}
+
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			this.finish();
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
+		}
+	}
+}

@@ -1,0 +1,42 @@
+package com.example.punerto.Activity;
+
+import co.example.punerto.classes.OfficeList;
+import com.example.punerto.R;
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+public class MechanicMeterView extends LinearLayout {
+
+	public Context context;
+	TextView txt_meter;
+	TextView txt_distance;
+	TextView txt_dayFare;
+	TextView txt_nightFare;
+
+	public MechanicMeterView(Context context) {
+		super(context);
+		this.context = context;
+		// TODO Auto-generated constructor stub
+	}
+
+	private void hookup() {
+		 LayoutInflater inflater = LayoutInflater.from(context);
+		 View view = inflater.inflate(R.layout.layout_office_view, null);
+//		 txt_officeId = (TextView) view.findViewById(R.id.txt_Id);
+//		 txt_OfficeName = (TextView) view.findViewById(R.id.txt_officeName);
+//		 txt_officeId = (TextView) view.findViewById(R.id.txt_Id);
+//		 txt_OfficeName = (TextView) view.findViewById(R.id.txt_officeName);
+		 this.addView(view);
+	}
+
+	public void setData(MechanicMeter mechanicMeter) {
+
+		// txt_officeId.setText(officeList.getOfficeId());
+		// txt_OfficeName.setText(officeList.getOfficeName());
+
+	}
+
+}

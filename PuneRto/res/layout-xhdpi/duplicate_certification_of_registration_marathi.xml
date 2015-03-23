@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="नमूना अर्ज"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        
+        
+ 
+
+
+        
+        <TextView
+            android:id="@+id/txt_IntroMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="अर्ज क्र. 26"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="शुल्क"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+
+
+
+
+
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="1.दुचाकी - रु. 30/-"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="2.खाजगी वाहन ( कार,जीप ई.) - रु. 100/-"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="3.मध्यम वाहतुक वाहन - रु. 200/-"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="4.जड वाहतुक वाहन - रु. 200/-"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="5.आयात केलेली कार - रु. 400/-"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="6.आयात केलेली दुचाकी - रु. 200/-"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="7.रिक्षा,टॅक्सी, वाहतुकीचे हलके वाहन,ट्रॅक्टर,ट्रेलर- रु. 150/-"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="8.जेसीबी, क्रेन - रु. 300/-"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+
+
+
+        
+        <TextView
+            android:id="@+id/txt_Introduction1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="कामाचे टप्पे"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="1.दस्तऐवजांची पडताळणी"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_IntroMenu11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="2.शुल्क प्रदान"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="3.दस्तऐवज गोळा करणे"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_Introduction11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="आवश्यक दस्तऐवज"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+
+
+
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="1.कर पुस्तक"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_IntroMenu1111"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="2.विमा प्रमाणपत्र"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_IntroMenu111111"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="3.PUC"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_IntroMenu11111111"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="4.RC पुस्तक ( खराब / फाटलेले)"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="5.भांडवलदाराकडून ना हरकत प्रमाणपत्र"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="6.चेसिस छाप"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="7.भाडे तत्वावरील वाहन असल्यास ग्राहयता प्रमाणपत्र"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="8.पोलीस अधिकार्याकडून प्रमाणपत्र"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="नोंद"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="मालकाने  फोटो ओळख,अर्ज 26 वर स्वाक्षरी साठी उजव्या हाताच्या अन्गठ्याचा ठसा आणि फोटो सहित उपस्थित रहावे.. ऑप्टिकल कार्ड साठी रु. 394/- शुल्का व्यतिरिक्त "
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</ScrollView>

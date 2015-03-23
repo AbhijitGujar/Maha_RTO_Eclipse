@@ -1,0 +1,100 @@
+package com.harcastle.spine;
+
+import com.google.android.gms.maps.CameraUpdate;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.SharedPreferences;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.Window;
+import android.widget.Toast;
+
+public class ActivityReach extends Activity {
+	GoogleMap map;
+	private static final String PREF_FIRSTLAUNCH_HELP = "helpDisplayed";
+	private boolean helpDisplayed = false;
+
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_howtoreach);
+		map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map))
+				.getMap();
+		map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+		LatLng latLng = new LatLng(18.529376, 73.838266);
+		CameraUpdate yourLocation = CameraUpdateFactory.newLatLngZoom(latLng,
+				11.0f);
+		map.animateCamera(yourLocation);
+		map.addMarker(
+				new MarkerOptions()
+						.position(latLng)
+						.title("Spine-Rx \n Super Specialist Spine Clinic By\n Dr Ketan Khurjekar  "))
+				.showInfoWindow();
+
+		showHelpForFirstLaunch();
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.main, menu);
+		return super.onCreateOptionsMenu(menu);
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		if (item.getItemId() == R.id.action_bar) {
+			showHelp();
+		}
+		return super.onOptionsItemSelected(item);
+	}
+
+	private void showHelpForFirstLaunch() {
+		if (helpDisplayed)
+			return;
+		helpDisplayed = getPreferenceValue(PREF_FIRSTLAUNCH_HELP, false);
+		if (!helpDisplayed) {
+			savePreference(PREF_FIRSTLAUNCH_HELP, true);
+			showHelp();
+		}
+	}
+
+	private boolean getPreferenceValue(String key, boolean defaultValue) {
+		SharedPreferences preferences = getPreferences(MODE_PRIVATE);
+		return preferences.getBoolean(key, defaultValue);
+	}
+
+	private void savePreference(String key, boolean value) {
+		SharedPreferences preferences = getPreferences(MODE_PRIVATE);
+		SharedPreferences.Editor editor = preferences.edit();
+		editor.putBoolean(key, value);
+		editor.commit();
+	}
+
+	private void showHelp() {
+
+		Toast.makeText(getApplicationContext(), "Show Screen Here",
+				Toast.LENGTH_LONG).show();
+		final Dialog dialog = new Dialog(ActivityReach.this);
+		dialog.setContentView(R.layout.layout_overlay_screen);
+	    dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+		//dialog.setCancelable(true);
+		dialog.show();
+		// final View instructionsContainer =
+		// findViewById(R.layout.layout_overlay_screen.xml);
+		// instructionsContainer.setVisibility(View.VISIBLE);
+		// instructionsContainer.setOnClickListener(new View.OnClickListener() {
+		// @Override
+		// public void onClick(View v) {
+		// instructionsContainer.setVisibility(View.INVISIBLE);
+		// }
+		// });
+	}
+}

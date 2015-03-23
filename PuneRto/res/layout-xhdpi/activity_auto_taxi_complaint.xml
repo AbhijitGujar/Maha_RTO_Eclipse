@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sample" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1695dp" >
+
+        <Spinner
+            android:id="@+id/spinner_RtoList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_ChooseOffice"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/txt_ChooseOffice"
+            android:entries="@array/spinner_item" />
+
+        <Button
+            android:id="@+id/btn_Camera"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/txt_Upload"
+            android:layout_alignBottom="@+id/txt_Upload"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/txt_Upload"
+            android:background="@drawable/camera"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/spinner_fistAlpha"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/spinner_OnlyMhNo"
+            android:layout_toRightOf="@+id/spinner_OnlyMhNo"
+            android:entries="@array/spinner_onlyFirstAlph" />
+
+        <Spinner
+            android:id="@+id/spinner_LastAlpha"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/spinner_fistAlpha"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/spinner_fistAlpha"
+            android:entries="@array/spinner_onlyLastAlph" />
+
+        <NumberPicker
+            android:id="@+id/pickerTwo"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/spinner_OnlyMhNo"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/picker_first" />
+
+        <NumberPicker
+            android:id="@+id/pickerThree"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/spinner_fistAlpha"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/pickerTwo" />
+
+        <NumberPicker
+            android:id="@+id/picker_first"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_alignTop="@+id/pickerTwo"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/txt_ChooseOffice" />
+
+        <NumberPicker
+            android:id="@+id/pickerFour"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_alignTop="@+id/pickerThree"
+            android:layout_toRightOf="@+id/pickerThree" />
+
+        <ImageView
+            android:id="@+id/img_selected"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/btn_Camera"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/txt_Upload" />
+
+        <TextView
+            android:id="@+id/txt_ChooseOffice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="36dp"
+            android:text="Choose Office :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView1" >
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_toRightOf="@+id/txt_Upload"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio01"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Auto"
+                android:onClick="itemAuto1"
+                android:layout_marginLeft="20dp"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radio11"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Taxi"
+                 android:onClick="itemAuto"
+                android:layout_marginLeft="20dp"
+               />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txt_Upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/radioGroup3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:text="Upload Image :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_OnlyMhNo"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:entries="@array/spinner_onlyMhItem" />
+
+        <Button
+            android:id="@+id/btn_Gallery"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/btn_Camera"
+            android:layout_alignBottom="@+id/btn_Camera"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/pic"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/picker_first"
+            android:text="Select Time"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/timePicker1"
+            android:layout_marginTop="26dp"
+            android:text="Select Date"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <CalendarView
+            android:id="@+id/calendarView1"
+            android:layout_width="200dp"
+            android:layout_height="190dp"
+            android:layout_below="@+id/timePicker1"
+            android:layout_toRightOf="@+id/txt_ChooseOffice" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_below="@+id/calendarView1"
+            android:layout_marginTop="14dp"
+            android:text="Mobile Number :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/chkBoxRudeBehave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/chkBoxRefusal"
+            android:layout_below="@+id/textView9"
+            android:layout_toLeftOf="@+id/pickerFour"
+             android:onClick="itemClickedRudeBehaviour"
+            android:text="Rude Behaviour" />
+
+        <CheckBox
+            android:id="@+id/chkBoxIDNotDisplayed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/chkBoxExcessFare"
+            android:layout_below="@+id/chkBoxRudeBehave"
+            android:onClick="itemClickedId"
+            android:text="Badge/ID Card/Tariff Card Not Displayed" />
+
+        <CheckBox
+            android:id="@+id/chkBoxExcessFare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/chkBoxRefusal"
+            android:onClick="itemClickedExcessFare"
+            android:layout_below="@+id/chkBoxIDNotDisplayed"
+            android:text="Excess Fare" />
+
+        <CheckBox
+            android:id="@+id/chkBoxTakLongDistRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/chkBoxExcessFare"
+            android:layout_alignParentRight="true"
+            android:onClick="itemClickedTakingLong"
+            android:layout_below="@+id/chkBoxExcessFare"
+            android:text="Taking Long Distance Route" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_Upload"
+            android:layout_below="@+id/img_selected"
+            android:layout_marginTop="31dp"
+            android:text="Motor Vehicle No:"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="220dp"
+            android:layout_height="140dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_below="@+id/chkBoxOther"
+            android:layout_marginTop="19dp"
+            android:text="Route From :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:visibility="gone"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtComplainantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView7"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView7"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:hint="Enter Complaints name" />
+
+        <EditText
+            android:id="@+id/edtComplainantAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView8"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:hint="Complaint Address" />
+
+        <EditText
+            android:id="@+id/edtPhoneNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView7"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView5"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:hint="Enter Mobile Number"
+            android:inputType="number"
+            android:maxLength="10" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtComplainantAddress"
+            android:layout_below="@+id/edtComplainantAddress"
+            android:layout_marginTop="18dp"
+            android:text="Complaint Type:"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtRouteFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView10"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView10"
+            android:layout_marginTop="17dp"
+            android:visibility="gone"
+            android:ems="10"
+            android:hint="Route From" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtRouteFrom"
+            android:layout_below="@+id/edtRouteFrom"
+            android:layout_marginTop="22dp"
+            android:text="Route To:"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edtRouteTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView01"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/TextView01"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Rout To"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edtEmailID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView11"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView11"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Enter Email id"
+            android:inputType="textWebEmailAddress" />
+
+        <EditText
+            android:id="@+id/edtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView12"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView12"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Type message here"
+            android:inputType="textMultiLine"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_below="@+id/edtPhoneNum"
+            android:layout_marginTop="19dp"
+            android:text="Complaint&apos;s Name:"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtComplainantName"
+            android:layout_below="@+id/edtComplainantName"
+            android:layout_marginTop="16dp"
+            android:text="Complainant&apos;s Address:"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView11"
+            android:layout_below="@+id/edtEmailID"
+            android:layout_marginTop="14dp"
+            android:text="Message"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtRouteTo"
+            android:layout_below="@+id/edtRouteTo"
+            android:layout_marginTop="22dp"
+            android:text="E-mail ID:"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/chkBoxOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/chkBoxTakLongDistRoute"
+            android:layout_below="@+id/chkBoxTakLongDistRoute"
+            android:onClick="itemClicked"
+            android:text="Other" />
+
+        <CheckBox
+            android:id="@+id/chkBoxRefusal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView9"
+            android:layout_alignBottom="@+id/textView9"
+            android:layout_toRightOf="@+id/textView5"
+            android:onClick="itemClickedRefusal"
+            android:text="Refusal" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_Upload"
+            android:layout_below="@+id/spinner_RtoList"
+            android:layout_marginTop="62dp"
+            android:text="Choose Type   :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/radioGroup3"
+            android:layout_toRightOf="@+id/textView7"
+            android:src="@drawable/auto" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/radioGroup3"
+            android:layout_alignRight="@+id/pickerFour"
+            android:src="@drawable/taxi" />
+
+        <Button
+            android:id="@+id/btn_SendData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/btn_Camera"
+            android:layout_below="@+id/edtEmailID"
+            android:layout_marginTop="43dp"
+            android:text="    Send    "
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+</ScrollView>

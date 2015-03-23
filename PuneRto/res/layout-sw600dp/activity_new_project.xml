@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/underline"
+            android:layout_gravity="left"
+            android:textColor="#000000"
+            android:layout_marginTop="30dp"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="•Displaying the attractive numbers on television in the office "
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="fill_vertical"
+            android:textAlignment="gravity"
+            android:text="•In this scheme, series wise attractive registration numbers   are displayed on television in the front portion of every   office. The said system is developed by the National   Informatics Center (NIC)  Pune \n "
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+             android:layout_gravity="fill_vertical"
+            android:textAlignment="gravity"
+            android:text="•This system is linked with the vehicle machinery and the   available attractive numbers along with their fee   are  displayed in an alternating fashion,on television   installed  in the front portion of every office for the   information of the general public.\n "
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+             android:layout_gravity="fill_vertical"
+            android:textAlignment="gravity"
+            android:text="•General public can reserve the attractive numbers   in a transparent and efficient manner without the interference of any middleman.\n "
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+             android:layout_gravity="fill_vertical"
+            android:textAlignment="gravity"
+            android:text="•Updated Motor Vehicle Inspection station under   construction at the Regional Transport Office Nasik   for computerized fitness checking of the vehicles.\n "
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+             android:layout_gravity="fill_vertical"
+            android:textAlignment="gravity"
+            android:text="•Information about the taxis published on the   website."
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:autoLink="web"
+            android:text="(www.mahatranscom.in) \n"
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+             android:layout_gravity="fill_vertical"
+            android:textAlignment="gravity"
+            android:text="•Toll free number for resolving complaints about   auto  rickshaws (1800-22-0110)\n "
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+             android:layout_gravity="fill_vertical"
+            android:textAlignment="gravity"
+            android:text="•The process of computerization of the records of the department under process\n "
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+             android:layout_gravity="fill_vertical"
+            android:textAlignment="gravity"
+            android:text="•Updated ( with sensors )vehicle driver testing track commissioned at Sub Regional Transport Office Baramati\n "
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+             android:layout_gravity="fill_vertical"
+            android:textAlignment="gravity"
+            android:text="•Scheme for dispatching Vehicle Registration Certificate and Driving License by post "
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</ScrollView>

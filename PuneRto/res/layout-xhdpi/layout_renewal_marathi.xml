@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_Introduction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="शुल्क"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        
+        
+
+        
+
+        <TextView
+            android:id="@+id/txt_IntroMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="परवान्याच्या कालबाह्य दिनांकाच्या 30 दिवसांच्या आत रु.261/- आणि कालबाह्य दिनांकानंतर रु.50/- पोस्टेज आकार रु.50/-"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        
+
+
+
+        
+        <TextView
+            android:id="@+id/txt_Introduction1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="कामाचे टप्पे"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_IntroMenu11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="1. दस्तऐवजांची पडताळणी\n\n2. शुल्क प्रदान\n\n3. पोस्टाद्वारे परवाना मिळणे\n "
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        
+       
+
+
+
+
+
+        
+        <TextView
+            android:id="@+id/txt_Introduction11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="आवश्यक दस्तऐवज"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_IntroMenu111"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="1.वाहन परवाना"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_IntroMenu1111"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="2.शारीरिक क्षमता दस्तऐवज फॉर्म क्र. 1 मध्ये"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_IntroMenu111111"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="3.खाजगी अथवा वाहतूकीच्या वाहनासाठीअर्जदार 50 पेक्षा जास्त वयाचा असल्यास    वैद्यकीय प्रमाणपत्र "
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_IntroMenu11111111"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="4.पासपोर्ट साइज़ फोटो 3"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_IntroMenu11111111464"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="5.वयाचा दाखला"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+
+
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="नोंद"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="परवाना स्मार्ट कार्ड व्यतिरिक्त असल्यास बायोमेट्रिक अनिवार्य आहे."
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/dialogButtonOk11"
+            android:layout_width="120dp"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="37dp"
+            android:background="@android:color/transparent"
+            android:text="       Ok      "
+            android:textColor="#0000FF"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

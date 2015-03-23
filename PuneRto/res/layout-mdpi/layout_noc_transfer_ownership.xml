@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="FEES"
+            android:textColor="#FF0000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="CLASS WISE FEES APPLICABLE"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="TWO WHEELER : 30/-"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="LMV : 100/-"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="WORK STAGES"
+            android:textColor="#FF0000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="1.DOCUMENT VERIFICATION"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="2.PAYMENT OF FEES"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="REQUIRED DOCUMENTS"
+            android:textColor="#FF0000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="1.ORIGINAL RC BOOK"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="2.ORIGINAL PUC"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="3.ORIGINAL INSURANCE"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="4.CHASSIS NUMBER PENCIL PRINT ON\n   FORM"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="5.FOR OUT OF STATE :POLICE NOC\n  (NO CASE RUNNING ON VEHICLE)"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</ScrollView>

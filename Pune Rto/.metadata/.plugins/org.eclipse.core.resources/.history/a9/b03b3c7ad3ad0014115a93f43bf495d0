@@ -1,0 +1,43 @@
+package com.example.punerto.Activity;
+
+import com.example.punerto.R;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+public class TaxiMeterView extends LinearLayout {
+
+	public Context context;
+	TextView txt_meter;
+	TextView txt_dayFare;
+	TextView txt_nightFare;
+
+	public TaxiMeterView(Context context) {
+		super(context);
+		hookup();
+		this.context = context;
+
+	}
+
+	private void hookup() {
+		LayoutInflater inflater = LayoutInflater.from(context);
+		View view = inflater.inflate(R.layout.layout_taxi_fare_view, null);
+		txt_meter = (TextView) view.findViewById(R.id.txt_TaxiMeter);
+		txt_dayFare = (TextView) view.findViewById(R.id.txt_TaxiDayFare);
+		txt_nightFare = (TextView) view.findViewById(R.id.txt_TaxiNightFare);
+		this.addView(view);
+	}
+
+	public void setData(TaxiFare taxiFare) {
+
+		txt_meter.setText(taxiFare.getMeter());
+		txt_dayFare.setText(taxiFare.getDayFare());
+		txt_nightFare.setText(taxiFare.getNightFare());
+		// txt_OfficeName.setText(officeList.getOfficeName());
+
+	}
+
+}

@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.punerto.MainActivity" >
+       <item
+        android:id="@+id/action_lanMarathi"
+        android:orderInCategory="100"
+        android:icon="@drawable/ma"
+        app:showAsAction="ifRoom"/>
+       
+     
+</menu>

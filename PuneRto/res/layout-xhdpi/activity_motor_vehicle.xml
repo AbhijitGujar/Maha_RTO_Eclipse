@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="676dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:text="Tax Calculator for Non-Motor Vehicle"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="49dp"
+            android:text="Select Type    :"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_marginLeft="37dp"
+            android:layout_toRightOf="@+id/textView2" >
+
+            <RadioButton
+                android:id="@+id/radio_MotorCycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Motor Cycle" />
+
+            <RadioButton
+                android:id="@+id/radio_four_Wheeler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 Wheeler" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/radioGroup1"
+            android:layout_marginTop="20dp"
+            android:text="             Type :"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioGroup1"
+            android:layout_alignTop="@+id/textView3" >
+
+            <RadioButton
+                android:id="@+id/radio_indian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Indian" />
+
+            <RadioButton
+                android:id="@+id/radio_Imported"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Imported" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/radioGroup2"
+            android:layout_marginTop="24dp"
+            android:text="    Ownership :"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioGroup2"
+            android:layout_alignTop="@+id/textView4" >
+
+            <RadioButton
+                android:id="@+id/radio_Individual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Individual" />
+
+            <RadioButton
+                android:id="@+id/radio_Company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_below="@+id/radioGroup3"
+            android:layout_marginTop="24dp"
+            android:text="   Type of Fuel :"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioGroup3"
+            android:layout_alignTop="@+id/textView5" >
+
+            <RadioButton
+                android:id="@+id/radio_Petrol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Petrol" />
+
+            <RadioButton
+                android:id="@+id/radio_Disel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disel" />
+
+            <RadioButton
+                android:id="@+id/radio_Cng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CNG/LPG" />
+
+            <RadioButton
+                android:id="@+id/radio_Battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Battery Operated" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edt_CostOfVehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroup4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="Enter cost of vehicle"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_Calculate"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edt_CostOfVehicle"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp"
+            android:text="Calculate" />
+
+        <Button
+            android:id="@+id/btn_Cancel"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/edt_CostOfVehicle"
+            android:layout_marginBottom="25dp"
+            android:text="Cancel" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edt_CostOfVehicle"
+            android:layout_below="@+id/edt_CostOfVehicle"
+            android:layout_marginTop="14dp"
+            android:text="Tax (in Rs)"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_CalculateShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_toRightOf="@+id/btn_Calculate"
+            android:text=""
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</ScrollView>

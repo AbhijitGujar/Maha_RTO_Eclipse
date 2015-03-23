@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="School Bus Policy for safe transportation of students "
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Objectives "
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Safe transportation of the school students"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Salient features "
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="•	The total school buses in the state – 17437 \n\n •Special rules applicable for the school buses with effect              from 23rd March 2011. \n\n •	Constitution of School Bus Committee under the   leadership of the Principal  at school level \n\n •Constitution of District School Bus committee at district level.\n \n• Guidelines issued by the School Education Department to the schools on 14th September 2011. \n \n•	Provisions like building of the bus, fire extinguisher instruments, first aid box, fitting speed controller, appointment of assistant in school bus  from security point of view,  \n\n •	All the rules complied in 17437 Buses  "
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btnOpenpdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PDF OPEN"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</ScrollView>

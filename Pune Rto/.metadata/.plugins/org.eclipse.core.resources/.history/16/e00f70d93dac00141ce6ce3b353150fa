@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="646dp" >
+
+        <TextView
+            android:id="@+id/txt_OfficeNameDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_OfficeIdDetails"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Office Name"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_OfficerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tXT"
+            android:layout_marginRight="40dp"
+            android:textSize="14dp"
+            android:layout_toRightOf="@+id/txt_OfficeIdDetails"
+            android:text="OfficerName" />
+
+        <TextView
+            android:id="@+id/txt_OfficeIdDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:text="MH"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignBaseline="@+id/tXT"
+            android:layout_alignBottom="@+id/tXT"
+            android:layout_toRightOf="@+id/txt_OfficeIdDetails"
+            android:text="Address" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tXT"
+            android:layout_below="@+id/tXT"
+            android:layout_marginTop="99dp"
+            android:text="Tel No :"
+             android:textSize="14dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_TelNo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_TelNo1"
+            android:layout_below="@+id/txt_TelNo1"
+            android:layout_marginTop="24dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txt_telNo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_TelNo2"
+            android:layout_below="@+id/txt_TelNo2"
+            android:layout_marginTop="24dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txt_TelNo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignLeft="@+id/txt_Address"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="22dp"
+            android:text="Address :"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_TelNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_telNo3"
+            android:layout_below="@+id/txt_telNo3"
+            android:layout_marginTop="22dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/txt_TelNo"
+            android:layout_marginTop="22dp"
+            android:textStyle="bold"
+             android:textSize="14dp"
+            android:textColor="#000000"
+            android:text="Email" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="39dp"
+            android:textColor="#000000"
+             android:textSize="14dp"
+            android:textStyle="bold"
+            android:text="Fax" />
+
+        <TextView
+            android:id="@+id/txt_Fax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignLeft="@+id/txt_EmailAddress"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_OfficeNameDetails"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="22dp"
+            android:text="Officer Name:"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_EmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView4"
+            android:layout_alignLeft="@+id/txt_OfficeIdDetails"
+            android:autoLink="web|email"
+            android:text="email Address" />
+        
+    </RelativeLayout>
+
+</ScrollView>

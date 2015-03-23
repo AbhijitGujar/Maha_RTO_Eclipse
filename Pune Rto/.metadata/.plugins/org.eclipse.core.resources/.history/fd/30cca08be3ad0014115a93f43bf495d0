@@ -1,0 +1,46 @@
+package com.example.punerto.Activity;
+
+import com.example.punerto.R;
+import com.example.punerto.View.TabAdapterRtoHelDisk;
+
+import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar.Tab;
+import android.support.v7.app.ActionBar.TabListener;
+import android.support.v7.app.ActionBarActivity;
+
+@SuppressWarnings("deprecation")
+public class ActivityRTOHelpDisk extends ActionBarActivity implements
+		TabListener {
+
+	
+	private ViewPager tabsviewPager;
+	TabAdapterRtoHelDisk tabAdapterRtoHelDisk;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_rto_help_disk);
+		
+		
+	}
+
+	@Override
+	public void onTabReselected(Tab arg0, FragmentTransaction arg1) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onTabSelected(Tab arg0, FragmentTransaction arg1) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onTabUnselected(Tab arg0, FragmentTransaction arg1) {
+		// TODO Auto-generated method stub
+
+	}
+}

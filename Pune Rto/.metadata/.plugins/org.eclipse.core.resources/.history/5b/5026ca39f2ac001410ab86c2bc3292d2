@@ -1,0 +1,213 @@
+package com.example.punerto.Adapter;
+
+import com.example.punerto.R;
+import com.example.punerto.Activity.ActivityAutoTaxiComplaint;
+import com.example.punerto.Activity.ActivityFaq;
+import com.example.punerto.Activity.ActivityOtherComplaint;
+import com.example.punerto.Activity.ActivityMotorVehicleDepartment;
+import com.example.punerto.Activity.ActivityNewProject;
+import com.example.punerto.Activity.ActivityRtoOfficeList;
+import com.example.punerto.Activity.ActivityPracticeTest;
+import com.example.punerto.Activity.ActivityRoadSafety;
+import com.example.punerto.Activity.ActivitySchoolBus;
+import com.example.punerto.Activity.ActivityTax;
+import com.example.punerto.Activity.MainActivity1;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
+import android.sax.StartElementListener;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+@SuppressLint("ViewHolder")
+public class AdapterRtoContent extends BaseAdapter {
+
+	String[] rtoContentNameList;
+	int[] rtoContenImages;
+	Context mContext;
+	LayoutInflater inflater;
+
+	public AdapterRtoContent(Context mContext, String[] rtoContentNameList,
+			int[] rtoContenImages) {
+
+		this.mContext = mContext;
+		this.rtoContentNameList = rtoContentNameList;
+		this.rtoContenImages = rtoContenImages;
+		inflater = (LayoutInflater) mContext
+				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+	}
+
+	@Override
+	public int getCount() {
+		// TODO Auto-generated method stub
+		return rtoContentNameList.length;
+	}
+
+	@Override
+	public Object getItem(int position) {
+		// TODO Auto-generated method stub
+		return position;
+	}
+
+	@Override
+	public long getItemId(int position) {
+		// TODO Auto-generated method stub
+		return position;
+	}
+
+	public class Holder {
+		TextView txt_rtoContentName;
+		ImageView img_rtoContentImage;
+	}
+
+	@Override
+	public View getView(final int position, View convertView, ViewGroup parent) {
+		// TODO Auto-generated method stub
+
+		Holder holder = new Holder();
+		View rowView;
+		rowView = inflater.inflate(R.layout.layout_rtocontent, null);
+		holder.txt_rtoContentName = (TextView) rowView
+				.findViewById(R.id.txt_RtoContentName);
+		holder.img_rtoContentImage = (ImageView) rowView
+				.findViewById(R.id.img_RtoContent);
+		holder.txt_rtoContentName.setText(rtoContentNameList[position]);
+		holder.img_rtoContentImage.setImageResource(rtoContenImages[position]);
+
+		rowView.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+
+				switch (position) {
+				case 0:
+
+					Intent intent = new Intent(mContext,
+							ActivityMotorVehicleDepartment.class);
+					mContext.startActivity(intent);
+					break;
+
+				case 1:
+
+					Intent intentActOffice = new Intent(mContext,
+							ActivityRtoOfficeList.class);
+					mContext.startActivity(intentActOffice);
+
+					break;
+
+				case 2:
+
+					break;
+
+				case 3:
+
+					Intent taxiIntent = new Intent(mContext,
+							ActivityAutoTaxiComplaint.class);
+					mContext.startActivity(taxiIntent);
+
+					break;
+				case 4:
+
+					Intent intentOtherComplaint = new Intent(mContext,
+							ActivityOtherComplaint.class);
+					mContext.startActivity(intentOtherComplaint);
+
+					break;
+
+				case 5:
+					Intent intentRoadSafety = new Intent(mContext,
+							ActivityRoadSafety.class);
+					mContext.startActivity(intentRoadSafety);
+					break;
+				case 6:
+
+					Intent intentPracticeTest = new Intent(mContext,
+							ActivityPracticeTest.class);
+					mContext.startActivity(intentPracticeTest);
+					break;
+
+				case 7:
+
+					break;
+				case 8:
+
+					// Toast.makeText(mContext, "Case 8 " + position,
+					// Toast.LENGTH_LONG).show();
+					break;
+
+				case 9:
+					//
+					// Toast.makeText(mContext, "Case 9 " + position,
+					// Toast.LENGTH_LONG).show();
+					break;
+
+				case 10:
+
+					// Toast.makeText(mContext, "Case 10 " + position,
+					// Toast.LENGTH_LONG).show();
+					break;
+
+				case 11:
+
+					// Toast.makeText(mContext, "Case 11 " + position,
+					// Toast.LENGTH_LONG).show();
+					break;
+
+				case 12:
+
+					// Toast.makeText(mContext, "Case 12 " + position,
+					// Toast.LENGTH_LONG).show();
+					Intent intentFaq = new Intent(mContext, ActivityFaq.class);
+					mContext.startActivity(intentFaq);
+
+					break;
+
+				case 13:
+
+					// Intent intenttax = new Intent(mContext,
+					// MainActivity1.class);
+					// mContext.startActivity(intenttax);
+
+					Intent intenttax = new Intent(mContext, ActivityTax.class);
+					mContext.startActivity(intenttax);
+					break;
+				case 14:
+
+					Intent intentNewProject = new Intent(mContext,
+							ActivityNewProject.class);
+					mContext.startActivity(intentNewProject);
+
+					break;
+
+				case 15:
+
+					Intent intentSchoolBus = new Intent(mContext,
+							ActivitySchoolBus.class);
+					mContext.startActivity(intentSchoolBus);
+					break;
+				case 16:
+
+					break;
+
+				case 17:
+
+					break;
+				case 18:
+
+					break;
+				default:
+					break;
+				}
+
+			}
+		});
+		return rowView;
+	}
+
+}

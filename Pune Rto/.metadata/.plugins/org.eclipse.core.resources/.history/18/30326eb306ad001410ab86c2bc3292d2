@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/underline"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="•Displaying the attractive numbers\n on television in the office\n"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="• In this scheme, series wise attractive\n  registration numbers are displayed on\n  television in the front portion of every\n  office. The said system is developed by\n  the National Informatics Center (NIC)\n  Pune\n"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="• This system is linked with the vehicle\n  machinery and the available attractive\n  numbers along with their fee are\n  displayed in an alternating fashion,on\n  television installed  in the front portion\n  of every office for the information of the\n  general public.\n"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="• General public can reserve the attractive\n  numbers in a transparent and efficient\n  manner without the interference of any\n  middleman.\n"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="• Updated Motor Vehicle Inspection station\n  under construction at the Regional\n  Transport Office Nasik for computerized\n  fitness checking of the vehicles.\n"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="• Information about the taxis published on\n  the website."
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:autoLink="web"
+            android:text="(www.mahatranscom.in)\n"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="•	Toll free number for resolving complaints\n  about auto rickshaws (1800-22-0110)\n"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="•	The process of computerization of the records of the\n  department under process\n"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="•	Updated ( with sensors )vehicle driver\n  testing track commissioned at Sub Regional Transport Office Baramati\n"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="•Scheme for dispatching Vehicle Registration Certificate and Driving License by post\n"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</ScrollView>

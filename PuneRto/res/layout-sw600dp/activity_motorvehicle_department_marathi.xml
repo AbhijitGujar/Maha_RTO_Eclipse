@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<!--     <GridView -->
+<!--         android:id="@+id/grid_MotorVehicleDepartment" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentLeft="true" -->
+<!--         android:numColumns="1" > -->
+
+<!--     </GridView> -->
+
+    <Button
+        android:id="@+id/btn_organizationChartEnglish"
+        android:layout_width="240dp"
+        android:layout_height="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/marathi_organization_chart" />
+
+    <Button
+        android:id="@+id/btn_aboutEnglish"
+        android:layout_width="240dp"
+        android:layout_height="230dp"
+        android:layout_alignLeft="@+id/btn_organizationChartEnglish"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/marathi_about_motor_vehicle_dept" />
+
+    <Button
+        android:id="@+id/btn_OfficersListEnglish"
+        android:layout_width="240dp"
+        android:layout_height="230dp"
+        android:layout_alignLeft="@+id/btn_organizationChartEnglish"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="47dp"
+        android:background="@drawable/marathi_rto_offices" />
+
+</RelativeLayout>

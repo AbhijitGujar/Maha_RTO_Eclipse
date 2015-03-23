@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btn_MechanicMeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="124dp"
+        android:text="Mechanic Meter Auto" />
+
+    <Button
+        android:id="@+id/btn_ElectricMeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Electric Meter Auto" />
+
+    <Button
+        android:id="@+id/btn_Taxi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_ElectricMeter"
+        android:layout_alignRight="@+id/btn_MechanicMeter"
+        android:layout_below="@+id/btn_ElectricMeter"
+        android:layout_marginTop="41dp"
+        android:text="         TAXI       " />
+
+</RelativeLayout>

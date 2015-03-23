@@ -1,0 +1,35 @@
+package com.example.punerto.Activity;
+
+import java.util.ArrayList;
+
+import com.example.punerto.R;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ListView;
+
+public class FragmentLicenseRelated extends Fragment {
+
+	ListView lst_LicenseRelated;
+	ArrayList<LicenseRelated> arrayLicenseRelateds;
+
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		View android = inflater.inflate(R.layout.layout_license_related,
+				container, false);
+		lst_LicenseRelated = (ListView) android
+				.findViewById(R.id.lst_LicenseRelated);
+		arrayLicenseRelateds.add(new LicenseRelated("1) Types Of License"));
+		arrayLicenseRelateds.add(new LicenseRelated("2) Renewal Of License"));
+		arrayLicenseRelateds.add(new LicenseRelated("3) Duplicate Of License"));
+		arrayLicenseRelateds.add(new LicenseRelated(
+				"4) NOC for change of Address"));
+		arrayLicenseRelateds.add(new LicenseRelated("5) Other"));
+
+		return android;
+	}
+}

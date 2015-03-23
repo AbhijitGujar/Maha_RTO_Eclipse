@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#c3c3c3"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="865dp"
+        android:orientation="vertical" >
+
+        <!-- <ListView -->
+        <!-- android:id="@+id/lst_PracticeTest" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent" > -->
+
+
+        <!-- </ListView> -->
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_Question"
+            android:layout_below="@+id/txt_Question"
+            android:layout_marginTop="137dp" >
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txt_ansStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_Correct_ans"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="21dp"
+            android:text="TextView"
+            android:textColor="#FF0000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_Correct_ans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/txt_ansStatus"
+            android:layout_marginTop="22dp"
+            android:text="TextView"
+            android:textColor="#FF0000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_Sign"
+            android:layout_width="350dp"
+            android:layout_height="190dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txt_Question"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txt_Question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/img_Sign"
+            android:layout_below="@+id/txt_QueNo"
+            android:layout_marginTop="22dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_QueNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_Question"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="35dp"
+            android:text="Question No :"
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="32dp"
+            android:text="Privious Question Answer :"
+            android:textColor="#FF0000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_Next"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioGroup1"
+            android:layout_below="@+id/radio_option3"
+            android:layout_marginTop="126dp"
+            android:text="    Next   "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_Next"
+            android:layout_below="@+id/btn_Next"
+            android:layout_marginTop="45dp"
+            android:text="----------------------------------------------------"
+            android:textColor="#FF0000"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioGroup1"
+            android:layout_below="@+id/radio_Option2"
+            android:text="RadioButton"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radio_Option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radio_option3"
+            android:layout_below="@+id/radioGroup1"
+            android:layout_marginTop="159dp"
+            android:text="RadioButton"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radio_Option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroup1"
+            android:layout_marginTop="110dp"
+            android:layout_toRightOf="@+id/radioGroup1"
+            android:checked="true"
+            android:text="RadioButton"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

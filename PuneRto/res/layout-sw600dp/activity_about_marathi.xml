@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_Introduction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="परिचय"
+            android:textColor="#FF0000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_IntroMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="मोटार वाहन कायदा 1988 मध्ये दिलेल्या तरतुदींचा आणि नियमांची अंमलबजावणी करण्यासाठी महाराष्ट्र राज्यातील मोटार वाहन विभाग मोटार वाहन कायदा 1988 मधील विभाग 213 प्रमाणे स्थापित करण्यात आलेली आहे."
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_Vision"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="उद्दिष्ट"
+            android:textColor="#FF0000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_IntroVision"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="मालाची आणि प्रवाशांची सुरक्षित वाहतुक, मोटार वाहनाशी निगडीत अशी नागरिकांना अनुकूल व तत्पर सेवा."
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_Mission"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="ध्येय"
+            android:textColor="#FF0000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_IntroMission"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="भेट देणार्यांसाठी  अनुकूल अशा दर्शनी सुविधा स्थापित होण्या करीता मोटार वाहन कायदा आणि नियमांची कठोर अंमलबजावणी करण्याचे उद्दिष्ट. विभागाला उपकरणे,मनुष्यबळ आणि प्रशिक्षण प्रदान करून सक्षम बनविणे. वाहनांची कर आकारणी सुलभ बनवुन प्रभावी तक्रार निवारण यंत्रणा स्थापित करणे."
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_functions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="कार्ये"
+            android:textColor="#FF0000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_IntroFunction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="मोटार वाहन कायदा आणि नियम यांच्या अंतर्गत मोटार वाहनांचा महसुल कर आणि शुल्क या स्वरुपात गोळा करण्यासाठी वैधानिक तरतुदिची अंमलबजावणी करणे."
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="विभागाची उद्दिष्टे"
+            android:textColor="#FF0000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="•	रस्ते अपघातातील मनुष्य व मालाची हानी कमी करणे व त्यायोगे नागरिकांची सुरक्षा वाढविणे."
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="•	वायू आणि ध्वनी प्रदूषण नियंत्रणात ठेवून सार्वजनिक आरोग्यात सुधारणा करणे."
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="विभागाची उद्दिष्टे साध्य करण्यासाठी वापरण्यात येणार कायदे व नियम"
+            android:textColor="#FF0000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text=" • मोटार वाहन कायदा 1988 \n •	केंद्रीय मोटार वाहन नियम 1989 \n •	महाराष्ट्र मोटार वाहन नियम 1989 \n •	मुंबई मोटार वाहन कर कायदा 1958 आणि त्यातील नियम \n •	मुंबई मोटार वाहन ( प्रवाशांवरील कर) कायदा 1958 आणि त्यातील नियम \n • व्यावसायिक कर कायदा 1975 आणि त्यातील नियम"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="विभागाची मुख्य कामे"
+            android:textColor="#FF0000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="•	रस्ता सुरक्षेच्या दृष्टीकोनातून उमेदवाराचे वाहन कौशल्य तपासणे व शिकाऊ आणि वाहन चालक परवाना,परवान्याचे नूतनीकरण, नक्कल प्रत ई. चे वाटप करणे."
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="•	वाहन व वाहन मालकाची ओळख करण्याकरीता वाहनांची नोंदणी करणे."
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="•	तांत्रिकदृष्ट्या असक्षम वाहनांवर प्रतिबंध घालण्यासाठी वाहनांची नियमीत यांत्रीक सक्षमता चाचणी करणे."
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="•	कर चुकविणारे आणि नियमांचा भंग करणारी वाहने तपासणे व अंमलबजावणी करणे."
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="•	विविध वाहनांमधील समन्वय व नियंत्रण राखण्यासाठी प्रवासी / माल वाहतुक परवाने प्रदान करणे."
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="•	धुरामुळे पर्यावरणाला होणारी हानी नियंत्रणात आणण्यासाठी वाहनांमुळे होणारे वायू प्रदूषण तपासणे."
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</ScrollView>

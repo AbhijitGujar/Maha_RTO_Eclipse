@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sample" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="968dp" >
+
+        <Spinner
+            android:id="@+id/spinner_RtoList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_ChooseOffice"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/txt_ChooseOffice"
+            android:entries="@array/spinner_item" />
+
+        <Button
+            android:id="@+id/btn_Camera"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/txt_Upload"
+            android:layout_alignBottom="@+id/txt_Upload"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/txt_Upload"
+            android:background="@drawable/camera"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/spinner_fistAlpha"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/spinner_OnlyMhNo"
+            android:layout_toRightOf="@+id/spinner_OnlyMhNo"
+            android:entries="@array/spinner_onlyFirstAlph" />
+
+        <Spinner
+            android:id="@+id/spinner_LastAlpha"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/spinner_fistAlpha"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/spinner_fistAlpha"
+            android:entries="@array/spinner_onlyLastAlph" />
+
+        <NumberPicker
+            android:id="@+id/pickerTwo"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/spinner_OnlyMhNo"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/picker_first" />
+
+        <NumberPicker
+            android:id="@+id/pickerThree"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/spinner_fistAlpha"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/pickerTwo" />
+
+        <NumberPicker
+            android:id="@+id/picker_first"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_alignTop="@+id/pickerTwo"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/txt_ChooseOffice" />
+
+        <NumberPicker
+            android:id="@+id/pickerFour"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_alignTop="@+id/pickerThree"
+            android:layout_toRightOf="@+id/pickerThree" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_selected"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:text="Motor Vehicle No:"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_selected"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/btn_Camera"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/txt_Upload" />
+
+        <TextView
+            android:id="@+id/txt_ChooseOffice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="36dp"
+            android:text="Choose Office :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView1" >
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_toRightOf="@+id/txt_Upload"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio01"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/auto"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radio11"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/taxi" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_ChooseOffice"
+            android:layout_below="@+id/spinner_RtoList"
+            android:layout_marginTop="24dp"
+            android:text="Choose Type   :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_Upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/radioGroup3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:text="Upload Image :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_OnlyMhNo"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:entries="@array/spinner_onlyMhItem" />
+
+        <Button
+            android:id="@+id/btn_Gallery"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/btn_Camera"
+            android:layout_alignBottom="@+id/btn_Camera"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/pic"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:layout_below="@+id/picker_first"
+            android:text="Select Time" />
+
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="220dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignRight="@+id/btn_Gallery"
+            android:layout_below="@+id/pickerTwo" />
+
+    </RelativeLayout>
+
+</ScrollView>

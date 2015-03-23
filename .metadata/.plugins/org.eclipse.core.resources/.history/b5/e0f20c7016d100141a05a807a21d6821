@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ECBC50"
+     >
+    
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical" >  
+    
+        
+	<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="horizontal" > 
+    
+			<TextView
+			android:id="@+id/txt_ChooseOffice"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:text="Choose Office :"
+			android:textColor="#000000"
+			android:textSize="18dp"
+			android:layout_gravity="center_vertical|center_horizontal"
+			android:textStyle="bold" />
+			
+			<Spinner
+			android:layout_marginTop="10dp"
+			android:id="@+id/spinner_RtoList"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			 android:layout_marginLeft="20dp"
+			android:entries="@array/spinner_item" />
+        
+     </LinearLayout>
+        
+      
+<View
+android:layout_width="fill_parent"
+android:layout_height="1dp"
+android:background="#FFC0C0C0" 
+android:layout_marginTop="10dp"
+android:layout_marginBottom="10dp"
+ />
+        
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" > 
+        
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Type   :"
+            
+            android:textColor="#000000"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        
+    
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal" >
+
+			            <RadioButton
+			                android:id="@+id/radio01"
+			                android:layout_width="80dp"
+			                android:layout_height="40dp"
+			                android:text="Auto"
+			                android:onClick="itemAuto1"
+			                android:checked="true" />
+
+			            <ImageView
+			                android:id="@+id/imageView1"
+			                android:layout_width="60dp"
+			                android:layout_height="30dp"
+			                
+			                android:layout_marginTop="8dp"
+			                android:src="@drawable/auto" />
+			
+			            <RadioButton
+			                android:id="@+id/radio11"
+			                android:layout_width="80dp"
+			                android:layout_height="40dp"
+			                android:text="Taxi"
+			                 android:onClick="itemAuto"
+			                android:layout_marginLeft="20dp"
+			                
+			               />
+			            <ImageView
+				            android:id="@+id/imageView2"
+				            android:layout_width="65dp"
+				            android:layout_height="45dp"
+				            android:src="@drawable/taxi" />
+			            			         
+        </RadioGroup>
+        
+        
+        </LinearLayout>
+          
+	<View
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="#FFC0C0C0" 
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    />
+        
+        <TextView
+            android:id="@+id/txt_Upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Image :"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textStyle="bold" />
+         
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >  
+        
+        <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >  
+    
+        <Button
+            android:id="@+id/btn_Camera"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+			android:layout_margin="20dp"
+            android:background="@drawable/camera"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_Gallery"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/pic"
+            android:textColor="#000000"
+            android:layout_margin="20dp" />
+        
+        </LinearLayout>
+    
+      <ImageView
+            android:id="@+id/img_selected"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+           android:layout_marginBottom="5dp"
+           android:layout_marginLeft="80dp"
+           android:layout_marginRight="50dp"
+           android:gravity="center"
+           android:scaleType="fitCenter"
+           />
+    
+    </LinearLayout>
+      
+	<View
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="#FFC0C0C0" 
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    />
+   
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Motor Vehicle No:"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+             
+             
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >  
+    
+     <NumberPicker
+            android:id="@+id/pickermh"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginLeft="30dp"
+            
+            />
+      <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   "
+            android:textSize="18sp"
+            android:textStyle="bold" />
+     
+     <NumberPicker
+            android:id="@+id/pickerone"
+            android:layout_width="40dp"
+            android:layout_height="150dp"
+            
+            />
+      <NumberPicker
+            android:id="@+id/pickertwo"
+            android:layout_width="40dp"
+            android:layout_height="150dp"
+            
+            />  
+             <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   "
+            android:textSize="18sp"
+            android:textStyle="bold" /> 
+        
+        <NumberPicker
+            android:id="@+id/picker_first"
+            android:layout_width="40dp"
+            android:layout_height="150dp"
+
+             />
+        <NumberPicker
+            android:id="@+id/pickerTwo"
+            android:layout_width="40dp"
+            android:layout_height="150dp" />
+        <NumberPicker
+            android:id="@+id/pickerThree"
+            android:layout_width="40dp"
+            android:layout_height="150dp" />
+        <NumberPicker
+            android:id="@+id/pickerFour"
+            android:layout_width="40dp"
+            android:layout_height="150dp" />
+                                                     
+    </LinearLayout>
+    
+      
+	<View
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="#FFC0C0C0" 
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    />
+	
+	
+	<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >  
+        
+        <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >  
+      
+      		<TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textStyle="bold" />
+    
+    		   
+            
+    		<DatePicker
+        android:id="@+id/calendarView1"
+        android:layout_width="wrap_content"
+		android:layout_marginLeft="15dp"
+        android:layout_height="180dp"
+        android:endYear="2100"
+        android:startYear="1900"
+        android:calendarViewShown="false"/>
+   			 
+       </LinearLayout>
+       
+        
+        <View 
+	    android:layout_width="1dp"
+	    android:layout_height="fill_parent"
+	    android:background="#FFC0C0C0" 
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    />
+        
+         <LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" >  
+		    
+		                <TextView
+		            android:id="@+id/textView3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Select Time"
+		            android:textColor="#000000"
+		            android:textSize="18sp"
+		            android:padding="10dp"
+		            android:textStyle="bold" />
+		    
+		   			 <TimePicker
+		            android:id="@+id/timePicker1"
+		            android:layout_width="wrap_content"
+		            android:layout_marginLeft="15dp"
+		            android:layout_height="180dp"
+		            />
+             
+           </LinearLayout>
+            
+        
+        
+        
+      </LinearLayout>      
+    
+   
+     
+     <View
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="#FFC0C0C0" 
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    />
+     
+    <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complaint&apos;s Name:"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textStyle="bold" />
+     <EditText
+            android:id="@+id/edtComplainantName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Complaints name" 
+             android:layout_marginLeft="10dp"/>
+     
+      <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complainant&apos;s Address:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:textStyle="bold" />
+      
+      <EditText
+            android:id="@+id/edtComplainantAddress"
+            android:inputType="textMultiLine"
+            android:lines="6"
+            android:minLines="2"
+            android:gravity="top|left"
+            android:maxLines="10"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:scrollbars="vertical"
+            android:hint="Type message here"
+           	android:layout_marginLeft="10dp"
+            />
+      
+      
+      <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number :"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textStyle="bold" />
+     
+     <EditText
+            android:id="@+id/edtPhoneNum"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+             android:layout_marginLeft="10dp"
+            android:hint="Enter Mobile Number"
+            android:inputType="number"
+            android:maxLength="10" />
+     
+    
+      <TextView
+            android:id="@+id/textView11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail ID:"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+      <EditText
+            android:id="@+id/edtEmailID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Email id"
+            android:inputType="textWebEmailAddress" 
+            
+            android:layout_marginLeft="10dp"
+            />
+      
+   
+     
+     
+     <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complaint Type:"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textStyle="bold" />
+     
+     
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" > 
+	    
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" > 
+	    
+     
+   <CheckBox
+            android:id="@+id/chkBoxIDNotDisplayed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="itemClickedId"
+            android:text="Badge/ID Card/Tariff Card Not Displayed"
+            android:layout_marginLeft="10dp" />
+   
+   <CheckBox
+            android:id="@+id/chkBoxTakLongDistRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="itemClickedTakingLong"
+            android:text="Taking Long Distance Route"
+            android:layout_marginLeft="10dp" />
+   
+   
+   <CheckBox
+            android:id="@+id/chkBoxRudeBehave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:onClick="itemClickedRudeBehaviour"
+            android:text="Rude Behaviour"
+            android:layout_marginLeft="10dp" />
+   
+   </LinearLayout>
+   
+   
+   	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" > 
+	    
+   <CheckBox
+            android:id="@+id/chkBoxExcessFare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="itemClickedExcessFare"
+            android:text="Excess Fare" 
+            android:layout_marginLeft="10dp"/>
+    
+     <CheckBox
+            android:id="@+id/chkBoxRefusal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="itemClickedRefusal"
+            android:text="Refusal"
+            android:layout_marginLeft="10dp" />
+      
+      <CheckBox
+            android:id="@+id/chkBoxOther"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="itemClicked"
+            android:text="Other"
+            android:layout_marginLeft="10dp" />
+      
+      </LinearLayout>
+      
+      
+      </LinearLayout>
+      
+      <View
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="#FFC0C0C0" 
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    />
+      
+      
+     	<LinearLayout
+        android:id="@+id/from_to"  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+	    
+					        <TextView
+					            android:id="@+id/tv_from"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:text="Route From :"
+					            android:textColor="#000000"
+					            android:textSize="18sp"
+					            android:textStyle="bold" />
+					
+					        <EditText
+					            android:id="@+id/edtRouteFrom"
+					            android:layout_width="fill_parent"
+					            android:layout_height="wrap_content"
+					            android:ems="10"
+					            android:hint="Route From" >
+					        </EditText>
+        
+    
+					      <TextView
+					            android:id="@+id/tv_to"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:text="Route To:"
+					            android:textColor="#000000"
+					            android:textSize="18sp"
+					            android:textStyle="bold" />
+					      
+					        <EditText
+					            android:id="@+id/edtRouteTo"
+					            android:layout_width="fill_parent"
+					            android:layout_height="wrap_content"
+					            android:ems="10"
+					            android:hint="Route To"/>
+    
+    
+      </LinearLayout>
+      
+      <LinearLayout
+        android:id="@+id/msg"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" > 
+      
+     	    
+						       <TextView
+						            android:id="@+id/tv_msg"
+						            android:layout_width="wrap_content"
+						            android:layout_height="wrap_content"
+						            android:text="Message"
+						            android:textColor="#000000"
+						            android:textSize="18sp"
+						            android:textStyle="bold"
+						             android:layout_marginLeft="10dp"
+						            />	    
+						     	    
+						     	    
+						      	    
+						             
+						       <EditText
+						             	android:id="@+id/edtMessage" 
+							            android:inputType="textMultiLine"
+							            android:lines="6"
+							            android:minLines="2"
+							            android:gravity="top|left"
+							            android:maxLines="10"
+							            android:layout_height="wrap_content"
+							            android:layout_width="fill_parent"
+							            android:scrollbars="vertical"
+							             android:hint="Type message here"
+						            	android:layout_marginLeft="10dp"
+							        />
+     	    
+        
+     	</LinearLayout>
+      
+      
+     
+       
+      
+      <Button
+            android:id="@+id/btn_SendData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="    Send    "
+            android:textColor="#000000" />
+    
+             
+    </LinearLayout>  
+</ScrollView>    

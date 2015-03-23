@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TabListener.java&apos; to &apos;PuneRto/src/com.example.punerto.Activity&apos;&#x0D;&#x0A;- Original project: &apos;FragmentTabsTutorial&apos;&#x0D;&#x0A;- Destination element: &apos;PuneRto/src/com.example.punerto.Activity&apos;&#x0D;&#x0A;- Original element: &apos;com.androidbegin.fragmenttabstutorial.TabListener.java&apos;" description="Copy compilation unit" destination="=PuneRto/src&lt;com.example.punerto.Activity" element1="/src&lt;com.androidbegin.fragmenttabstutorial{TabListener.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1422439185027" units="1" version="1.0"/>
+</session>

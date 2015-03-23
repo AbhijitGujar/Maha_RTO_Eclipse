@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C3C3C3" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/underline_marathi"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="•	कार्यालयातील दूरचित्रवाणीवर आकर्षक क्रमांक दाखविणे \n"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="•	या योजने अंतर्गत, प्रत्येक कार्यालयाच्या समोरील भागावरील दूरचित्रवाणीवर आकर्षक नोंदणी क्रमांक दाखविण्यात येतील. प्रस्तुत प्रणाली राष्ट्रीय सूचना विज्ञान केंद्र (NIC)  द्वारे विकसित करण्यात आलेली आहे.\n"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="•	ही प्रणाली वाहनच्या यंत्रणेशी संलग्न करण्यात आलेली आहे आणि सर्व सामान्य जनतेच्या माहिती करीता ;उपलब्ध असणारे आकर्षक क्रमांक त्यांच्या शुल्कासहित प्रत्येक कार्यालयाच्या समोरील भागात असणार्या दूरचित्रवाणी वर दाखविले जातील.\n"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="•	कोणत्याही मध्यस्थाशिवाय सामान्य नागरिक पारदर्शी आणि कार्यक्षमरीत्या आकर्षक क्रमांक राखून ठेवू शकतील\n"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="•	प्रादेशिक परिवहन कार्यालय,नाशिक येथे वाहनांच्या संगणकिकृत योग्यतेचे परीक्षण करण्यासाठी सुधारित मोटार वाहन तपासणी स्थान उभारण्यात येत आहे.\n"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="•	टॅक्सी संबंधी माहिती संकेत स्थळावर प्रकाशित करण्यात आली आहे.\n"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:autoLink="web"
+            android:text="  (www.mahatranscom.in)\n"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="ऑटो रिक्षांच्या तक्रार निवारणासाठी निशुल्क क्रमांक - 1800-22-0110\n"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="•	विभागाच्या नोंदींच्या संगणकीकरणाची प्रक्रिया सुरू आहे.\n"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="•	सुधारित ( सेन्सर सहित ) वाहन चालक चाचणी रस्ता उप प्रादेशिक परिवहन कार्यालय बारामती येथे अधिकृत करण्यात आला आहे.\n"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="•	पोस्टाद्वारे वाहन चालक परवाना व वाहन नोंदणी प्रमाणपत्र पाठवण्यासंबंधी योजना.\n"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</ScrollView>

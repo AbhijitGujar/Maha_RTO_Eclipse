@@ -1,0 +1,21 @@
+package com.example.punerto.Activity;
+
+import com.example.punerto.R;
+
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.ListView;
+
+public class ActivityTaxiFare extends ActionBarActivity {
+	
+	ListView lst_TaxiFare;
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_taxi_fare);
+        lst_TaxiFare=(ListView) findViewById(R.id.lst_taxiFare);
+        
+		
+	}
+
+}

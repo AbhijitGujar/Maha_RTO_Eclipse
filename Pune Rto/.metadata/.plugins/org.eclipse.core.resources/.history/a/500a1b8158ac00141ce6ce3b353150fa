@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btn_RoadSafetyWeek"
+        android:layout_width="150dp"
+        android:layout_height="145dp"
+        android:layout_alignLeft="@+id/btn_trafficSign"
+        android:layout_below="@+id/btn_trafficSign"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/roadsafety"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_Information"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/info"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_trafficSign"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignLeft="@+id/btn_Information"
+        android:layout_below="@+id/btn_Information"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/trafficsign"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+</RelativeLayout>

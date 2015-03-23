@@ -1,0 +1,70 @@
+package com.example.punerto.Activity;
+
+import com.example.punerto.R;
+import com.example.punerto.View.TabAdapterRtoHelDisk;
+
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar.Tab;
+import android.support.v7.app.ActionBar.TabListener;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+
+@SuppressWarnings("deprecation")
+public class ActivityRTOHelpDisk extends ActionBarActivity implements
+		TabListener {
+
+	
+	private ViewPager tabsviewPager;
+	TabAdapterRtoHelDisk tabAdapterRtoHelDisk;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_rto_help_disk);
+		
+		tabsviewPager = (ViewPager) findViewById(R.id.tabspager);
+		tabAdapterRtoHelDisk = new TabAdapterRtoHelpDisk(getSupportFragmentManager());
+		tabsviewPager.setAdapter(tabAdapterRtoHelDisk);
+		getSupportActionBar().setHomeButtonEnabled(false);
+		getSupportActionBar().setTitle("RTO HelpDisk");
+		getSupportActionBar().setBackgroundDrawable(
+				new ColorDrawable(Color.parseColor("#E45252")));
+		getSupportActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+
+		Tab friendstab = getSupportActionBar().newTab()
+				.setText("Motor Vehicle Tax").setTabListener(this);
+
+		Tab publicprofiletab = getSupportActionBar().newTab()
+				.setText("Information").setTabListener(this);
+		// Tab communitytab =
+		// getSupportActionBar().newTab().setText("professional Tax")
+		// .setTabListener(this);
+
+		getSupportActionBar().addTab(friendstab);
+		getSupportActionBar().addTab(publicprofiletab);
+		
+		
+	}
+
+	@Override
+	public void onTabReselected(Tab arg0, FragmentTransaction arg1) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onTabSelected(Tab arg0, FragmentTransaction arg1) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onTabUnselected(Tab arg0, FragmentTransaction arg1) {
+		// TODO Auto-generated method stub
+
+	}
+}

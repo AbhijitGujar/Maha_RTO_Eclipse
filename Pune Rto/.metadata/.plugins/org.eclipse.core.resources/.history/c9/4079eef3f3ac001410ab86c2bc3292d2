@@ -1,0 +1,190 @@
+package com.example.punerto.Activity;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import co.example.punerto.classes.Faq;
+
+import com.example.punerto.R;
+import com.example.punerto.Adapter.ExpandableListAdapter;
+
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.ExpandableListView;
+
+public class ActivityExpandableFaq  extends ActionBarActivity{
+
+	    ExpandableListAdapter listAdapter;
+	    ExpandableListView expListView;
+	    List<String> listDataHeader;
+	    HashMap<String, List<String>> listDataChild;
+	 
+	    @Override
+	    protected void onCreate(Bundle savedInstanceState) {
+	        super.onCreate(savedInstanceState);
+	        setContentView(R.layout.activity_expandable_faq);
+	 
+	        // get the listview
+	        expListView = (ExpandableListView) findViewById(R.id.lvExp);
+	 
+	        // preparing list data
+	        prepareListData();
+	 
+	        listAdapter = new ExpandableListAdapter(this, listDataHeader, listDataChild);
+	 
+	        // setting list adapter
+	        expListView.setAdapter(listAdapter);
+	    }
+	 
+	    /*
+	     * Preparing the list data
+	     */
+	    private void prepareListData() {
+	 
+//			" ",
+//			"RTO is an abbreviation used for Regional Transport Officer. Regional Transport Officer is licensing, registration, taxation authority of that region."));
+//			"",
+//			"6 months"
+//
+//			arrFaq.add(new Faq(
+//					"1",
+//					" ",
+//					"A learner as well as permanent licence is valid throughout India."));
+//			arrFaq.add(new Faq("1", "4 Remain",
+//					"Very well, prior to the date of expiry."));
+//			arrFaq.add(new Faq(
+//					"1",
+//					"5 Remain ",
+//					"You have to apply to the licencing authority (RTO) in the jurisdiction in which you ordinarily reside or carry on business or the motor driving school from where you intend to get the instructions is situated."));
+//			arrFaq.add(new Faq(
+//					"1",
+//					"6 My license is expired 2 yesr's back, do I need to get a fresh one or can I still renew it? ",
+//					"You can renew your licence within 5 years from its date of expiry. Penalty for late renewal is charged after first 30 days of expiry. Meaning you have 30 days grace period after the date of expiry to renew it. Penalty for late renewal is Rs10 per year or part of year for the period lapsed."));
+//			arrFaq.add(new Faq(
+//					"1",
+//					"7 Can I drive a motorcycle with learner license? ",
+//					"Learner’s licence is meant for learning purpose only. It is not a full-fledged licence. You can drive only with pillion rider possessing valid driving licence with him. "));
+//			arrFaq.add(new Faq(
+//					"1",
+//					"8 Who is exempted from test of competence for driving license? ",
+//					"A person holding a driving licence issued by the Defence Department to drive their vehicles Or issued by a competent authority of any country outside India subject to the compliance of medical certificate is exempted from the test of competence to drive such class of vehicle"));
+//			arrFaq.add(new Faq(
+//					"1",
+//					"9 No, driving with such licence is an offence under motor vehicle laws. ",
+//					"No, driving with such licence is an offence under motor vehicle laws. "));
+//			arrFaq.add(new Faq("1", "10 Can I drive with an expired license? ", ""));
+//			arrFaq.add(new Faq(
+//					"1",
+//					"11 Do I need to keep the documents of vehicle with me while driving?",
+//					"You must produce following valid document in original if demanded by police officer in uniform or an officer from motor vehicle dept. I. Driving licence II. Registration certificate III. Taxation certificate IV. Insurance certificate V. PUC certificate VI. Road permit and fitness certificate "));
+//			arrFaq.add(new Faq(
+//					"1",
+//					"12 Which douments I need to produce in support of age group? ",
+//					"Any of the following documents can be used for Age proof: 1.School leaving certificate 2.SSC certificate 3.Passport 4.Electricity bill 5.Telephone bill 6.Rent receipt "));
+//			arrFaq.add(new Faq(
+//					"1",
+//					"13 Which documents I need to produce in support of Address proof?",
+//					"Any of the following documents can be used for Address proof: 1.Electoral roll/ voters I-card 2.Life insurance policy 3.Birth certificate 4.Passport 5.Civil sersurgeon's certificate "));
+//			arrFaq.add(new Faq(
+//					"1",
+//					"14 Do I need to produce original age address proof while obtaining certificate? ",
+//					"You can produce the copies attested by a gazetted officer of the state government or central or local body "));
+//			arrFaq.add(new Faq("1",
+//					"15 Do I need to be present while obtaining the license? ",
+//					"You must be present for obtaining a licence at RTO office "));
+//			arrFaq.add(new Faq(
+//					"1",
+//					"16 How many hours of drving instructions a motor driving school is supposed to impart to the candidateenrolled?  ",
+//					""));
+//			arrFaq.add(new Faq(
+//					"1",
+//					"17 What is difference between contract carriage and stage carriage? ",
+//					"Contract carriage is the vehicle engaged for the whole journey between two points for carriage of persons hiring it but it has no right to take other passengers on route. The stage carrier is a vehicle, which runs between two points irrespective of any prior contract and is boarded by passengers on route who pay the fare for the distance they travel. "));
+//			arrFaq.add(new Faq(
+//					"1",
+//					"18 What is the gross vehicle weight of the vehicle? ",
+//					"It is the weight of empty vehicle plus the payload certified by the registering authority. "));
+//			arrFaq.add(new Faq(
+//					"1",
+//					"19 What is invalid carriage? ",
+//					"It is the vehicle specially designed for the use of persons suffering from physical defects or disability and essentially used for or by such perso"));
+//			arrFaq.add(new Faq(
+//					"1",
+//					"20 Which are non-transport vehicles? ",
+//					"Vehicles used for non-commercial purposes by the registered owner for his own use. e.g motorcycle, motorcar. "));
+		
+	        listDataHeader = new ArrayList<String>();
+	        listDataChild = new HashMap<String, List<String>>();
+	 
+	        // Adding child data
+	        listDataHeader.add("1 What is RTO?");
+	        listDataHeader.add("2 How long is a learner license valid?");
+	        listDataHeader.add("3 I have obtained a learner license in mumbai, is it valid in chennai?");
+	        
+	        listDataHeader.add("1 What is RTO?");
+	        listDataHeader.add("2 How long is a learner license valid?");
+	        listDataHeader.add("3 I have obtained a learner license in mumbai, is it valid in chennai?");
+	        
+	        listDataHeader.add("1 What is RTO?");
+	        listDataHeader.add("2 How long is a learner license valid?");
+	        listDataHeader.add("3 I have obtained a learner license in mumbai, is it valid in chennai?");
+	        
+	        
+	        listDataHeader.add("1 What is RTO?");
+	        listDataHeader.add("2 How long is a learner license valid?");
+	        listDataHeader.add("3 I have obtained a learner license in mumbai, is it valid in chennai?");
+	        
+	        
+	        listDataHeader.add("1 What is RTO?");
+	        listDataHeader.add("2 How long is a learner license valid?");
+	        listDataHeader.add("3 I have obtained a learner license in mumbai, is it valid in chennai?");
+	        
+	        
+	        listDataHeader.add("1 What is RTO?");
+	        listDataHeader.add("2 How long is a learner license valid?");
+	        listDataHeader.add("3 I have obtained a learner license in mumbai, is it valid in chennai?");
+	        
+	        
+	        listDataHeader.add("1 What is RTO?");
+	        listDataHeader.add("2 How long is a learner license valid?");
+	        listDataHeader.add("3 I have obtained a learner license in mumbai, is it valid in chennai?");
+	        
+	        
+	        listDataHeader.add("1 What is RTO?");
+	        listDataHeader.add("2 How long is a learner license valid?");
+	        listDataHeader.add("3 I have obtained a learner license in mumbai, is it valid in chennai?");
+	        
+	        
+	        
+	 
+	        // Adding child data
+	        List<String> top250 = new ArrayList<String>();
+	        top250.add("The Shawshank Redemption");
+	        top250.add("The Godfather");
+	        top250.add("The Godfather: Part II");
+	        top250.add("Pulp Fiction");
+	        top250.add("The Good, the Bad and the Ugly");
+	        top250.add("The Dark Knight");
+	        top250.add("12 Angry Men");
+	 
+//	        List<String> nowShowing = new ArrayList<String>();
+//	        nowShowing.add("The Conjuring");
+//	        nowShowing.add("Despicable Me 2");
+//	        nowShowing.add("Turbo");
+//	        nowShowing.add("Grown Ups 2");
+//	        nowShowing.add("Red 2");
+//	        nowShowing.add("The Wolverine");
+//	 
+//	        List<String> comingSoon = new ArrayList<String>();
+//	        comingSoon.add("2 Guns");
+//	        comingSoon.add("The Smurfs 2");
+//	        comingSoon.add("The Spectacular Now");
+//	        comingSoon.add("The Canyons");
+//	        comingSoon.add("Europa Report");
+//	 
+	        listDataChild.put(listDataHeader.get(0), top250); // Header, Child data
+//	        listDataChild.put(listDataHeader.get(1), nowShowing);
+//	        listDataChild.put(listDataHeader.get(2), comingSoon);
+	    }
+}

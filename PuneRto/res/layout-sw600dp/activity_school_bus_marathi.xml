@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a7ffeb" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:text="विद्यार्थ्यांच्या सुरक्षित वाहतुकी साठी शालेय वाहन (स्कूल बस) धोरण"
+            android:textColor="#000000"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:text="उद्दिष्टे "
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:text="शालेय विद्यार्थांची सुरक्षित वाहतुक"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:text="ठळक वैशिष्ट्ये "
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:gravity="fill_vertical"
+            android:text="•	राज्यातील एकूण शालेय वाहने (स्कूल बस) - 17437 \n\n• 23 मार्च 2011 पासून शालेय वाहनासाठी (स्कूल बस) विशेष नियम अंमलात येणार.\n\n• शालेय स्तरावर मुख्याध्यापकांच्या नेतृत्वाखाली शालेय वाहन (स्कूल बस) मंडळ स्थापण्यात येईल.\n\n• जिल्हा स्तरावर जिल्हा शालेय वाहन (स्कूल बस) मंडळ स्थापण्यात येईल.\n\n• शालेय शिक्षण विभागतर्फे शाळांना मार्गदर्शिका 14 सप्टेंबर 2011 रोजी देण्यात येतील. \n\n• वाहनाची बांधणी,अग्निरोधक उपकरणे,प्रथमोपचार पेटी,वेग नियंत्रक बसविणे,शालेय वाहनामध्ये (स्कूल बस) सुरक्षेच्या दृष्टीने एक सहाय्यक नेमणे ई. तरतुदी \n\n• सर्व नियम 17437 शालेय वाहनांमध्ये (स्कूल बस) लागू."
+            android:textAlignment="gravity"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnOpenpdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="PDF OPEN"
+            android:textSize="30dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>
