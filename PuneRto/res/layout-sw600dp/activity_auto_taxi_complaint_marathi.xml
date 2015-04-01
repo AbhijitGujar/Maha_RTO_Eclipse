@@ -371,7 +371,7 @@ android:layout_marginBottom="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="itemClickedId"
-            android:text="बडगे / ओळखपत्र / दर कार्ड दाखवले नाही  "
+            android:text="बॅज / ओळखपत्र प्रदर्शित न करणे / चालक गणवेशात नसणे "
             android:layout_marginLeft="10dp" />
    
    <CheckBox
@@ -387,8 +387,8 @@ android:layout_marginBottom="10dp"
             android:id="@+id/chkBoxRudeBehave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-             android:onClick="itemClickedRudeBehaviour"
-            android:text="उद्धट वर्तणुक  "
+            android:onClick="itemClickedRudeBehaviour"
+            android:text="अधिक भाडयाची मागणी करणे /जादा भाडे आकारणे "
             android:layout_marginLeft="10dp" />
    
    </LinearLayout>
@@ -412,7 +412,8 @@ android:layout_marginBottom="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="itemClickedRefusal"
-            android:text="Refusal"
+            android:text="भाडे नाकारणे
+"
             android:layout_marginLeft="10dp" />
       
       <CheckBox
@@ -458,7 +459,7 @@ android:layout_marginBottom="10dp"
 					            android:layout_width="fill_parent"
 					            android:layout_height="wrap_content"
 					            android:ems="10"
-					            android:hint="Route From" >
+					            android:hint="येथे लिहा" >
 					        </EditText>
         
     
@@ -476,7 +477,7 @@ android:layout_marginBottom="10dp"
 					            android:layout_width="fill_parent"
 					            android:layout_height="wrap_content"
 					            android:ems="10"
-					            android:hint="Route To"/>
+					            android:hint="येथे लिहा"/>
     
     
       </LinearLayout>
@@ -509,7 +510,7 @@ android:layout_marginBottom="10dp"
 							            android:layout_height="wrap_content"
 							            android:layout_width="fill_parent"
 							            android:scrollbars="vertical"
-							             android:hint="Type message here"
+							             android:hint="येथे संदेश लिहा "
 						            	android:layout_marginLeft="10dp"
 							        />
      	    

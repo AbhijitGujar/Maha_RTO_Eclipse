@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:padding="5dp" >
+
+   <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/doc_number"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            <Spinner
+            android:id="@+id/docspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+            
+             
+    
+        <LinearLayout
+        android:id="@+id/doc1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+         >
+          
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_doc1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/doc_type_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+         
+                 <Spinner
+            android:id="@+id/doc1spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+                 
+           <EditText
+            android:id="@+id/lic_no_doc1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lic_no_doc" />
+           
+           
+            <EditText
+            android:id="@+id/issu_autho_doc1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/issu_autho" />
+
+            
+            
+            <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"   
+	        android:orientation="horizontal" >
+	        
+               			<TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/datelabel_doc"
+		                android:textAppearance="?android:attr/textAppearanceMedium" />
+	        
+						<EditText
+						android:id="@+id/date_doc1"
+						android:layout_width="100dp"
+						android:layout_height="wrap_content"
+						android:clickable="false" 
+				        android:cursorVisible="false" 
+				        android:focusable="false" 
+				        android:focusableInTouchMode="false"
+						android:inputType="date" >
+						
+						</EditText>
+						
+						<ImageButton
+						android:id="@+id/img_but_doc1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:cropToPadding="true"
+						android:onClick="selectDate"/>
+				   	   
+		  </LinearLayout>
+            
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/doc2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"   
+        android:orientation="vertical"
+        android:visibility="visible" >
+            
+        
+            
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_doc2"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+                 
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/doc_type_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+          <Spinner
+            android:id="@+id/doc2spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+            <EditText
+            android:id="@+id/lic_no_doc2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lic_no_doc" />
+            
+             <EditText
+            android:id="@+id/issu_autho_doc2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/issu_autho" />
+             
+             <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"   
+	        android:orientation="horizontal" >
+	        
+               			<TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/datelabel_doc"
+		                android:textAppearance="?android:attr/textAppearanceMedium" />
+	        
+						<EditText
+						android:id="@+id/date_doc2"
+						android:layout_width="100dp"
+						android:layout_height="wrap_content"
+						android:clickable="false" 
+				        android:cursorVisible="false" 
+				        android:focusable="false" 
+				        android:focusableInTouchMode="false"
+						android:inputType="date" >
+						
+						</EditText>
+						
+						<ImageButton
+						android:id="@+id/img_but_doc2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:cropToPadding="true"
+						android:onClick="selectDate"/>
+				   	   
+		  </LinearLayout>
+             
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/doc3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+         >
+       
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_doc3"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+       
+          <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/doc_type_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+                      
+             <Spinner
+            android:id="@+id/doc3spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+               <EditText
+            android:id="@+id/lic_no_doc3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lic_no_doc" />
+               
+                <EditText
+            android:id="@+id/issu_autho_doc3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/issu_autho" />
+                    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"   
+	        android:orientation="horizontal" >
+	        
+               			<TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/datelabel_doc"
+		                android:textAppearance="?android:attr/textAppearanceMedium" />
+	        
+						<EditText
+						android:id="@+id/date_doc3"
+						android:layout_width="100dp"
+						android:layout_height="wrap_content"
+						android:clickable="false" 
+				        android:cursorVisible="false" 
+				        android:focusable="false" 
+				        android:focusableInTouchMode="false"
+						android:inputType="date" >
+						
+						</EditText>
+						
+						<ImageButton
+						android:id="@+id/img_but_doc3"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:cropToPadding="true"
+						android:onClick="selectDate"/>
+				   	   
+		  </LinearLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/doc4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+                
+        
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_doc4"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                
+             
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/doc_type_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+             <Spinner
+            android:id="@+id/doc4spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+               <EditText
+            android:id="@+id/lic_no_doc4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lic_no_doc" />
+               
+                <EditText
+            android:id="@+id/issu_autho_doc4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/issu_autho" />
+                
+             <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"   
+	        android:orientation="horizontal" >
+	        
+               			<TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/datelabel_doc"
+		                android:textAppearance="?android:attr/textAppearanceMedium" />
+	        
+						<EditText
+						android:id="@+id/date_doc4"
+						android:layout_width="100dp"
+						android:layout_height="wrap_content"
+						android:clickable="false" 
+				        android:cursorVisible="false" 
+				        android:focusable="false" 
+				        android:focusableInTouchMode="false"
+						android:inputType="date" >
+						
+						</EditText>
+						
+						<ImageButton
+						android:id="@+id/img_but_doc4"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:cropToPadding="true"
+						android:onClick="selectDate"/>
+				   	   
+		  </LinearLayout>
+                
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/doc5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+         >
+                
+        
+                
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/label_doc5"
+       android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+   
+  
+   
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/doc_type_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+             
+             <Spinner
+            android:id="@+id/doc5spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+               <EditText
+            android:id="@+id/lic_no_doc5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lic_no_doc" />
+               
+            <EditText
+            android:id="@+id/issu_autho_doc5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/issu_autho" />
+            
+            
+            <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"   
+	        android:orientation="horizontal" >
+	        
+               			<TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/datelabel_doc"
+		                android:textAppearance="?android:attr/textAppearanceMedium" />
+	        
+						<EditText
+						android:id="@+id/date_doc5"
+						android:layout_width="100dp"
+						android:layout_height="wrap_content"
+						android:clickable="false" 
+				        android:cursorVisible="false" 
+				        android:focusable="false" 
+				        android:focusableInTouchMode="false"
+						android:inputType="date" >
+						
+						</EditText>
+						
+						<ImageButton
+						android:id="@+id/img_but_doc5"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:cropToPadding="true"
+						android:onClick="selectDate"/>
+				   	   
+		  </LinearLayout>            
+            
+        
+    </LinearLayout>
+    
+     <Button
+            android:id="@+id/btn_SendData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="    Send    "
+            android:textColor="#000000" />
+    
+    </LinearLayout>
+    
+    
+   </ScrollView>

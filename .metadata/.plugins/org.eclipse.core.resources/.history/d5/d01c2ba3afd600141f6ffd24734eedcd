@@ -1,0 +1,114 @@
+package com.example.punerto.Activity;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import co.example.punerto.classes.RtoDialog;
+
+import com.androidexample.gcm.R;
+import com.example.androidtablayout.PhotosActivity;
+import com.example.androidtablayout.SongsActivity;
+import com.example.androidtablayout.VideosActivity;
+
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.TabActivity;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.EditText;
+import android.widget.RadioGroup;
+import android.widget.TabHost;
+import android.widget.Toast;
+import android.widget.TabHost.TabSpec;
+
+public class ActivityLearnLicAppointment_Tab1 extends Activity 
+{
+	
+	 private List<Map<String, String>> proof_code = new ArrayList<Map<String, String>>();
+	 private List<Map<String, String>> qualification_master = new ArrayList<Map<String, String>>();
+	 private List<Map<String, String>> qualification_master2 = new ArrayList<Map<String, String>>();
+	
+	
+	private RadioGroup radioSexGroup;
+	EditText ll_first_name,ll_middle_name, ll_last_name;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) 
+	{
+		super.onCreate(savedInstanceState);
+
+		if (ActivityLanguage.lang.equals("English")) {
+			setContentView(R.layout.activity_learn_lic_app);
+			
+			
+		} else {
+			setContentView(R.layout.activity_learn_lic_app);
+		
+		}
+		
+		
+		
+		HashMap<String, String> code = new HashMap<String, String>();
+		code.put("B", "Psv Badge");
+		code.put("C", "First Aid Certificate");
+		code.put("D", "Driving Licence (DL)");
+		code.put("F", "FIR(First Information Report)");
+		code.put("H", "Hill Driving Training Certificate");
+		code.put("I", "International Driving Permit (IDP)");
+		code.put("L", "Learners Licence (LL)");
+		code.put("T", "Driving Training Certificate");
+		code.put("V", "Visa");
+		code.put("Z", "Hazardous Training Certificate");
+		code.put("E", "Age-School/Educational Cert.");
+		code.put("A", "Age-Passport");
+		code.put("1", "Age-Birth Certificate");
+		code.put("2", "Age-Affidavit by Magistrate/Notary Public");
+		code.put("3", "Address-Voter-ID");
+		code.put("P", "Address-Passport");
+		code.put("4", "Address-LIC Policy");
+		code.put("5", "Address-ID Card issued by Central/State Govt");
+		code.put("6", "Address-PaySlip by Central/State Govt/Localbody");
+		code.put("7", "Address-AADHAAR CARD");
+		proof_code.add(code);
+		
+		
+		checkSpecialCharacters( "akjshf aisf oasihfshf sufh &ushfoahs");
+		
+		radioSexGroup = (RadioGroup) findViewById(R.id.radioSex);
+		
+		
+		
+	}
+	
+	public void  checkSpecialCharacters(String strcheck )
+	{
+		
+		Pattern regex = Pattern.compile("[,″&<>′]");
+		Matcher matcher = regex.matcher(strcheck);
+		if (matcher.find())
+		{
+			RtoDialog.showNeutralDialog(ActivityLearnLicAppointment_Tab1.this,"Form Restrictions","Special Character (″ , & , < , > , ′ ) are not allowed");
+		}
+		else
+		{
+			
+		}
+		
+		
+	}
+	
+	
+	
+	
+	
+}

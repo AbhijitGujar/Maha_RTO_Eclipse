@@ -2,8 +2,166 @@
 <resources>
 
     <string name="app_name">MAH RTO</string>
-    <string name="hello_world">Hello world!</string>
+  
     <string name="action_settings">Settings</string>
+    
+    
+     <string name="lltitle">Learning License Application</string>
+     
+     
+     
+     <string name="first_name">First name</string>
+     <string name="middle_name">Middle name</string>
+     <string name="last_name">Last name</string>
+     
+    <string name="gender">Gender</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="radio_Others">Others</string>
+    <string name="dob">Date of Birth</string>
+    <string name="b_place">Type your place of birth</string>
+    <string name="migrated">If place of birth is out side India, Month and Year when migrated to India :</string>
+    <string name="mig_month">month</string>
+    <string name="mig_year">  year  </string>
+    <string name="b_country">  Select birth country </string>
+    <string name="ll_email"> your email address </string>
+    <string name="name_of">Select Relation </string>
+    <string name="ll_father">Father</string>
+    <string name="ll_mother"> Mother </string>
+    <string name="ll_husband"> Husband </string>
+    <string name="ll_guardian"> Guradian </string>
+    
+    
+    
+    
+    
+    <string name="p_as_P"> Permanent address same as present address </string>
+    
+     <string name="p_address"> Permanent Address details  </string>
+     <string name="p_house_no"> House number </string>
+     <string name="p_street_locality"> Street and locality  </string>
+     <string name="p_city_village"> City or village </string>
+     <string name="p_dist"> Select district </string>
+     <string name="p_state"> Select state </string>
+      <string name="p_pin"> Pin code </string>
+     <string name="p_phone"> Phone number </string>
+     <string name="p_mobile"> Mobile number  </string>
+     <string name="p_duration"> Duration of stay </string>
+     <string name="p_years"> Years </string>
+     <string name="p_months"> Months </string>
+     
+	<string name="citizenship_status_type"> Citizenship by </string>
+	<string name="ll_by_birth"> Birth </string>
+	<string name="ll_by_regis"> Registration </string>
+	<string name="ll_descent"> Descent </string>
+	<string name="ll_naturalization"> Naturalization </string>
+	<string name="non_indian"> Non Indian </string>
+	<string name="edu_qualification"> Educational qulaification </string>
+	<string name="identification_marks"> Identification marks </string>
+	<string name="identification_marks1"> Describe Identification marks here</string>
+	<string name="blood_group"> Blood Group:  </string>
+	
+	<string name="check_lic_to_apply"> Check the type of license that you want to apply for:  </string>
+	<string name="doc_number"> Select number of documnets you want to upload: </string>
+	
+	<string name="doc_type_label"> Select Type of document: </string>
+	
+	<string name="issu_autho">Enter the issuing authority here</string>
+	<string name="date_of_issue">Select date of issue:  </string>
+	
+	<string name="label_doc1">Details of First Document </string>
+	<string name="label_doc2">Details of Second Document </string>
+	<string name="label_doc3">Details of Third Document </string>
+	<string name="label_doc4">Details of Fourth Document </string>
+	<string name="label_doc5">Details of Fifth Document </string>
+	
+		
+	<string name="lic_no_doc"> Licence Certificate Badge number </string>
+	<string name="datelabel_doc"> Select date: </string>
+	
+
+	
+	<string name="covs3"> MOTOR CYCLE WITH GEAR (NON TRANSPORT)  </string>
+	<string name="covs5">LMV -3 WHEELER NT  </string>
+	<string name="covs8">LMV -3 WHEELER CAB  </string>
+	<string name="covs9"> LMV -3 WHEELER TRANSPORT GOODS NON PSV  </string>
+	<string name="covs4"> LMV-NT-CAR </string>
+	<string name="covs7">LMV (TRANSPORT)  </string>
+	<string name="covs6">LMV-TRACTOR-NT </string>
+	<string name="covs10">TRANSPORT VECHICLE - M/HMV(RIGID CHASSIS) - GOODS  </string>
+	<string name="covs12">INVALID CARRIAGE VEHICLE  </string>
+	<string name="covs13">ROAD ROLLER  </string>
+	<string name="covs2"> MOTOR CYCLE WITHOUT GEAR(NON TRANSPORT)  </string>
+	<string name="covs53">MOTOR CYCLE WITH GEAR (TRANSPORT)  </string>
+	<string name="covs54"> MOTOR CYCLE WITH GEAR(TRANSPORT)PSV </string>
+	<string name="covs16">LMV-TRANSPORT-PSV-CAB </string>
+	<string name="covs15"> LMV-TRACTOR TRAILER(TRANSPORT) </string>
+	<string name="covs17">TRANSPORT VEHICLE-M/HMV(RIGID CHASSIS) PSV-BUS </string>
+	<string name="covs58"> TRANSPORT VEHICLE-M/HMV-ARTICULATED </string>
+	<string name="covs59"> TRANSPORT VEHICLE-M/HMV - TRACTOR TRAILER </string>
+	<string name="covs65">OTHERS - CONSTRUCTION EQUIPMENTS  </string>
+	
+	
+	
+     
+     
+     <string name="parentletterforbelow18age">parents letter if below 18 age</string>
+     <string name="allnecessarycertificates">all necessary certificates</string>
+     <string name="examptedmadicaltest">exampted from medical test</string>
+     <string name="examptedpreliminarytest">exampted from preliminary test</string>
+     <string name="convicted">convicted</string>
+     <string name="attdlnumber">attach dl number</string>
+     <string name="date_attdtofconviction">date of conviction</string>
+     <string name="attreason">attreason</string>
+     
+     
+     
+    <string-array name="edu_list">
+        <item>Msc</item>
+        <item>MBA</item>
+       
+    </string-array>
+     
+    
+    
+    
+     
+    <string-array name="blood_group_list">
+        <item>A +</item>
+        <item>A -</item>
+        <item>B +</item>
+        <item>B -</item>
+        <item>O +</item>
+        <item>O -</item>
+        <item>M +</item>
+        <item>M -</item>
+        <item>AB +</item>
+        <item>AB -</item>
+     
+    </string-array>
+     
+     
+     <string-array name="dist_list">
+        <item>Pune</item>
+        <item>Mumbai</item>
+        <item>Satara</item>
+     
+    </string-array>
+    
+     <string-array name="country_list">
+        <item>India</item>
+        <item>China</item>
+        <item>USA</item>
+     
+    </string-array>
+     
+    <string-array name="state_list">
+        <item>Maharashtra</item>
+        <item>Gujrat</item>
+        <item>Delhi</item>
+     
+    </string-array>
+     
 
     <string-array name="spinner_item">
         <item>MH 01 RTO Mumbai Central</item>
@@ -57,6 +215,8 @@
         <item>MH 49 Dy.RTO Nagpur (EAST</item>
         <item>MH 50 Dy.RTO Karad</item>
     </string-array>
+    
+    
     <string-array name="spinner_onlyMhItem">
         <item>MH 01</item>
         <item>MH 02</item>

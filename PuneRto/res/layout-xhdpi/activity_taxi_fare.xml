@@ -4,6 +4,76 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
+     
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Choose district " />
+         
+         
+          <Spinner
+            android:id="@+id/spinner_dist"
+            android:layout_marginTop="10dp"  
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"/>
+          
+          <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal" >
+
+			            <RadioButton
+			                android:id="@+id/radio01"
+			                android:layout_width="80dp"
+			                android:layout_height="40dp"
+			                android:text="Auto"
+			                android:onClick="itemAuto1"
+			                android:layout_marginLeft="10dp"
+			                android:checked="true" />
+
+			            <ImageView
+			                android:id="@+id/imageView1"
+			                android:layout_width="60dp"
+			                android:layout_height="30dp"
+			                android:src="@drawable/auto"
+			                
+			                android:layout_marginTop="5dp" />
+			
+			            <RadioButton
+			                android:id="@+id/radio11"
+			                android:layout_width="80dp"
+			                android:layout_height="40dp"
+			                android:text="Taxi"
+			                 android:onClick="itemAuto"
+			                android:layout_marginLeft="20dp"
+			                
+			               />
+			            <ImageView
+				            android:id="@+id/imageView2"
+				            android:layout_width="65dp"
+				            android:layout_height="45dp"
+				            android:src="@drawable/taxi" />
+			            			         
+        </RadioGroup>
+        
+        
+     </LinearLayout>   
+    
+    
+    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,8 +83,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#009688"
-            android:text="Meter     Day Fare     Night Fare                "
+            android:text="      Meter           Day Fare        Night Fare       "
             android:textColor="#FFFFFF" />
+        
+        
     </LinearLayout>
 
     <LinearLayout

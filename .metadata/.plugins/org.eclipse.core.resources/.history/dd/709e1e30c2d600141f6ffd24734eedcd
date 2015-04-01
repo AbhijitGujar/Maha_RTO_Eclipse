@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/p_as_P" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/p_address"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/p_house_no"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/p_house_no"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/p_street_locality"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/p_street_locality"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/p_city_village"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/p_city_village"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/p_dist"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/p_add_district"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/dist_list" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/p_state"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/p_state"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/state_list" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#000000" />
+
+        <EditText
+            android:id="@+id/p_pin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/p_pin"
+            android:inputType="number"
+            android:maxLength="10" />
+
+        <EditText
+            android:id="@+id/p_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/p_phone"
+            android:inputType="number"
+            android:maxLength="10" />
+
+        <EditText
+            android:id="@+id/p_mobile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/p_mobile"
+            android:inputType="number"
+            android:maxLength="10" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p_duration"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/p_years"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/p_years"
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <EditText
+                android:id="@+id/p_months"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/p_months"
+                android:inputType="number"
+                android:maxLength="2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/p_address"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/t_house_no"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/p_house_no"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/t_street_locality"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/p_street_locality"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/t_city_village"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/p_city_village"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/p_dist"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/t_add_district"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/dist_list" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/p_state"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/t_state"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/state_list" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#000000" />
+
+        <EditText
+            android:id="@+id/t_pin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/p_pin"
+            android:inputType="number"
+            android:maxLength="10" />
+
+        <EditText
+            android:id="@+id/t_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/p_phone"
+            android:inputType="number"
+            android:maxLength="10" />
+
+        <EditText
+            android:id="@+id/t_mobile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/p_mobile"
+            android:inputType="number"
+            android:maxLength="10" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p_duration"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/t_years"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/p_years"
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <EditText
+                android:id="@+id/t_months"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/p_months"
+                android:inputType="number"
+                android:maxLength="2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/citizenship_status_type"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/citizenship_status_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/ll_by_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ll_by_birth" />
+
+                <RadioButton
+                    android:id="@+id/ll_by_regis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ll_by_regis" />
+
+                <RadioButton
+                    android:id="@+id/ll_descent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ll_descent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/ll_naturalization"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ll_naturalization" />
+
+                <RadioButton
+                    android:id="@+id/non_indian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/non_indian" />
+            </LinearLayout>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edu_qualification"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/edu_qualification"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/edu_list" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/identification_marks"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/identification_marks1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/identification_marks1"
+            android:maxLength="100" />
+
+        <EditText
+            android:id="@+id/identification_marks2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/identification_marks1"
+            android:maxLength="100" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blood_group"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/blood_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:entries="@array/blood_group_list" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/covs3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs3" />
+
+        <CheckBox
+            android:id="@+id/covs5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs5" />
+
+        <CheckBox
+            android:id="@+id/covs8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs8" />
+
+        <CheckBox
+            android:id="@+id/covs9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs9" />
+
+        <CheckBox
+            android:id="@+id/covs4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs4" />
+
+        <CheckBox
+            android:id="@+id/covs7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs7" />
+
+        <CheckBox
+            android:id="@+id/covs6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs6" />
+
+        <CheckBox
+            android:id="@+id/covs10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs10" />
+
+        <CheckBox
+            android:id="@+id/covs12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs9" />
+
+        <CheckBox
+            android:id="@+id/covs13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs13" />
+
+        <CheckBox
+            android:id="@+id/covs2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs2" />
+
+        <CheckBox
+            android:id="@+id/covs53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs53" />
+
+        <CheckBox
+            android:id="@+id/covs54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs54" />
+
+        <CheckBox
+            android:id="@+id/covs16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs16" />
+
+        <CheckBox
+            android:id="@+id/covs15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs15" />
+
+        <CheckBox
+            android:id="@+id/covs17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs17" />
+
+        <CheckBox
+            android:id="@+id/covs58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs58" />
+
+        <CheckBox
+            android:id="@+id/covs59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs59" />
+
+        <CheckBox
+            android:id="@+id/covs65"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs65" />
+
+        <Button
+            android:id="@+id/btn_SendData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="    Send    "
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</ScrollView>

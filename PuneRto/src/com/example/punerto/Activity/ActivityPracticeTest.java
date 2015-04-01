@@ -76,7 +76,8 @@ public class ActivityPracticeTest extends ActionBarActivity {
 		txt_status = (TextView) findViewById(R.id.txt_ansStatus);
 		txt_correctAns = (TextView) findViewById(R.id.txt_Correct_ans);
 
-		if (ActivityLanguage.lang.equals("English")) {
+		if (ActivityLanguage.lang.equals("English")) 
+		{
 			arrayPracticeTests
 					.add(new PracticeTest(
 							"Near a pedestrian crossing, when the pedestrians are waiting to cross the road, you should",

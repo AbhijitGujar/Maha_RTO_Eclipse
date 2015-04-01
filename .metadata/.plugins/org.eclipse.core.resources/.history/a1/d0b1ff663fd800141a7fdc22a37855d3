@@ -1,0 +1,160 @@
+package co.example.punerto.classes;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
+
+public class ActivityLearnLicAppointment 
+{
+	 
+	
+	// all the from variables are here 
+	
+	 public static String applicantrefno="";  
+	 public static String licence_type="";  
+	 public static String statecode="";  
+	 public static String rtocode="";  
+	 public static String first_name="";  
+	 public static String middle_name="";  
+	 public static String last_name="";  
+	 public static String applicant_name="";  
+	 public static String gender_type="";  
+	 public static String dob="";  
+	 public static String birth_place="";  
+	 public static String migration_year="";  
+	 public static String migration_month="";  
+	 public static String birth_country="";  
+	 public static String email_id="";  
+	 public static String relation_type="";  
+	 public static String p_first_name="";  
+	 public static String p_middle_name="";  
+	 public static String p_last_name="";  
+	 public static String p_flat_house_no="";  
+	 public static String p_street_locality="";  
+	 public static String p_village_city="";  
+	 public static String p-district="";  
+	 public static String p-state="";  
+	 public static String p-pin="";  
+	 public static String p-phone-no="";  
+	 public static String p-mobile-no="";  
+	 public static String p-durationofstay_year="";  
+	 public static String p-durationofstay_month="";  
+	 public static String t-flat-house-no="";  
+	 public static String t-street-locality="";  
+	 public static String t-village-city="";  
+	 public static String t-district="";  
+	 public static String t-state="";  
+	 public static String t-pin="";  
+	 public static String t-phone-no="";  
+	 public static String t-durationofstay_year="";  
+	 public static String t-durationofstay_month="";  
+	 public static String citizenship-status type="";  
+	 public static String edu-qualification="";  
+	 public static String applicantrefno="";  
+	 public static String applicantrefno="";  
+	 public static String applicantrefno="";  
+	 public static String applicantrefno="";  
+	 public static String applicantrefno="";  
+	 public static String applicantrefno="";  
+	 public static String applicantrefno="";  
+	 public static String applicantrefno="";  
+	
+	
+	
+	
+	
+	
+	
+	 public static List<String> proof_code1 = new ArrayList<String>();
+	 public static List<String> proof_code2 = new ArrayList<String>();
+	
+	public static List<Map<String, String>> qualification_master = new ArrayList<Map<String, String>>();
+	
+	public void initializedata()
+	{
+		
+		
+		proof_code1.add("B");proof_code2.add("Psv Badge");
+		proof_code1.add("C");proof_code2.add("First Aid Certificate");
+		proof_code1.add("D");proof_code2.add("Driving Licence (DL)");
+		proof_code1.add("F");proof_code2.add("FIR(First Information Report)");
+		proof_code1.add("H");proof_code2.add("Hill Driving Training Certificate");
+		proof_code1.add("I");proof_code2.add("International Driving Permit (IDP)");
+		proof_code1.add("L");proof_code2.add("Learners Licence (LL)");
+		proof_code1.add("T");proof_code2.add("Driving Training Certificate");
+		proof_code1.add("V");proof_code2.add("Visa");
+		proof_code1.add("Z");proof_code2.add("Hazardous Training Certificate");
+		proof_code1.add("E");proof_code2.add("Age-School/Educational Cert.");
+		proof_code1.add("A");proof_code2.add("Age-Passport");
+		proof_code1.add("1");proof_code2.add("Age-Birth Certificate");
+		proof_code1.add("2");proof_code2.add("Age-Affidavit by Magistrate/Notary Public");
+		proof_code1.add("3");proof_code2.add("Address-Voter-ID");
+		proof_code1.add("P");proof_code2.add("Address-Passport");
+		proof_code1.add("4");proof_code2.add("Address-LIC Policy");
+		proof_code1.add("5");proof_code2.add("Address-ID Card issued by Central/State Govt");
+		proof_code1.add("6");proof_code2.add("Address-PaySlip by Central/State Govt/Localbody");
+		proof_code1.add("7");proof_code2.add("Address-AADHAAR CARD");
+		
+		
+		HashMap<String, String> quali_list = new HashMap<String, String>();
+		quali_list.put("0", "Illiterate");
+		quali_list.put("1", "Not specified");
+		quali_list.put("2", "Below  8th");
+		quali_list.put("3", "8th   PASSED");
+		quali_list.put("4", "10th Class /SSC/ SSLC/CBSE (X)/ICSE (X)");
+		quali_list.put("6", "I T I");
+		quali_list.put("7", "Certificate  course");
+		quali_list.put("10", "+2/Intermediate/ICSE (12th )/CBSE(12th)");
+		quali_list.put("11", "Diploma in Engineering (non Mechanical)");
+		quali_list.put("12", "Diploma in Mechanical Engineering");
+		quali_list.put("13", "Diploma in Other faculties");
+		quali_list.put("14", "DHMS");
+		quali_list.put("30", "B A / BBA / B. Com / B Sc");
+		quali_list.put("31", "Bachelor of  Agriculture / Vet.Sciences");
+		quali_list.put("32", "B E ( other than Mechanical)");
+		quali_list.put("33", "B E (Mechanical)");
+		quali_list.put("34", "MBBS / BHMS / BAMS");
+		quali_list.put("35", "BadgasfaBachelor of Education / Lawsfsfe");
+		quali_list.put("39", "Any Other Graduation Not specified above");
+		quali_list.put("50", "MA / MBA / M.Com / M.SC");
+		quali_list.put("51", "PG Diploma In Science/Arts/Commerce/Mgt");
+		quali_list.put("51", "PG Diploma In Science/Arts/Commerce/Mgt");
+		quali_list.put("52", "PG Diploma In Engineering / Medicine");
+		quali_list.put("53", "M Sc (Agriculture / Vet. Sciences)");
+		quali_list.put("54", "M E ( other than Mechanical )");
+		quali_list.put("55", "M E (Mechanical)");
+		quali_list.put("56", "MS / MD /  MHMS / MAMS / MDS");
+		quali_list.put("57", "Master of Education / Law");
+		quali_list.put("58", "CA / ICWA / ICS – or  equivalent");
+		quali_list.put("59", "Any Other PG/PG Diploma  Not specified");
+		quali_list.put("70", "M Phil. (Sci/Arts/Com/ Edn/Law/ Mgt/etc)");
+		quali_list.put("80", "Ph.D. (Sci/Arts/Com/ Edn/Law/ Mgt/etc)");
+		quali_list.put("81", "Ph.D in Engineering");
+		quali_list.put("82", "Ph. D. in Medicine");
+		quali_list.put("90", "M. Ch. ( Surgery )/ D.M. ( Medicine )");
+		
+		qualification_master.add(quali_list);
+		
+		
+		
+		
+	}
+	public boolean  checkSpecialCharacters(String strcheck )
+	{
+		
+		Pattern regex = Pattern.compile("[,″&<>′]");
+		Matcher matcher = regex.matcher(strcheck);
+		if (matcher.find())
+			return true;
+		else
+			return false;
+		
+		
+	}
+
+}

@@ -1,0 +1,93 @@
+package com.example.punerto.Activity;
+
+import com.androidexample.gcm.R;
+import com.example.punerto.Adapter.AdapterRtoContent;
+
+import android.widget.GridView;
+
+import android.app.Activity;
+
+import android.os.Bundle;
+
+public class MainActivity extends Activity 
+{
+	GridView grid_RtoContent;
+	// for English Language
+	public static String[] rtoContentNameList = 
+		{ "Motor Vehicle Department",
+			"RTO Office", "Citizen Charter/GR/Notifications",
+			"Auto/Taxi Complaint",
+			"Other Complaint",
+			"Road Safety",
+			"Practice Test",
+			"Important Message",
+			"License Type",
+			"FAQ",
+			"New Projects",
+			"School Bus",
+			"UserManual",
+			" Credits",
+			"ll_apointment",
+			"dl_appointment",
+			"blank1",
+			 };
+	public static int[] rtoContenImages = {
+			R.drawable.motor_vehicle_department, 
+			R.drawable.rto_office,
+			R.drawable.gr_notification, 
+			R.drawable.auto_taxi_complaint,
+			R.drawable.other_complaints, 
+			R.drawable.road_safety,
+			R.drawable.practice_test, 
+			R.drawable.important_message,
+			R.drawable.license_type,
+			R.drawable.new_project, 
+			R.drawable.faq,
+			R.drawable.school_bus, 
+			R.drawable.user_manual, 
+			R.drawable.credits,
+			R.drawable.ll_apointment,
+			R.drawable.dl_appointment,
+			R.drawable.blank1 };
+
+	// for martahi language
+
+	public static String[] rtoContentNameListMarathi = { "मराठी", "RTO Office",
+			"Citizen Charter/GR/Notifications", "Auto/Taxi Complaint",
+			"Other Complaint", "Road Safety", "Practice Test",
+			"Important Message", "License Type", "New Projects", "FAQ",
+			"School Bus", "UserManual", "Credits","ll_apointment","dl_appointment", "blank1"};
+	public static int[] rtoContenImagesMarathi =
+		{
+			R.drawable.marathi_motor_vehicle_department,
+			R.drawable.marathi_rto_offices, 
+			R.drawable.marathi_citizen_charter,
+			R.drawable.marathi_auto_rikshaw_taxi_complains,
+			R.drawable.marathi_other_complaints,
+			R.drawable.marathi_road_safety,
+			R.drawable.marathi_learnig_license_practice_test,
+			R.drawable.marathi_important_messages,
+			R.drawable.marathi_rto_help_desk, 
+			R.drawable.marathi_new_projects,
+			R.drawable.marathi_faq, 
+			R.drawable.marathi_school_bus_policy,
+			R.drawable.marathi_user_manual, 
+			R.drawable.marathi_credits,
+			R.drawable.blank1 };
+
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		grid_RtoContent = (GridView) findViewById(R.id.grid_Main);
+		if (ActivityLanguage.lang.equals("English")) {
+			grid_RtoContent.setAdapter(new AdapterRtoContent(MainActivity.this,
+					rtoContentNameList, rtoContenImages));
+		} else {
+
+			grid_RtoContent.setAdapter(new AdapterRtoContent(MainActivity.this,
+					rtoContentNameListMarathi, rtoContenImagesMarathi));
+		}
+
+	}
+
+}

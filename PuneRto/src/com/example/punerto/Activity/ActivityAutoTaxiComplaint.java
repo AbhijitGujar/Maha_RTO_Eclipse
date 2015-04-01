@@ -5,9 +5,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Properties;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.mail.Authenticator;
 import javax.mail.Message;
@@ -18,20 +21,29 @@ import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+
+import co.example.punerto.classes.ServerAccess1;
+
 import com.androidexample.gcm.R;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
+import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.app.ActionBar;
@@ -50,12 +62,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.NumberPicker;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
 public class ActivityAutoTaxiComplaint extends ActionBarActivity {
 
+	ProgressDialog mProgressDialog;
+    String strTest;
 	private Button btn_Camera, btn_Gallery, btn_SendData;
 	private ImageView img_selected;
 	private NumberPicker numberPicker1, numberPicker2, numberPicker3,
@@ -76,6 +91,7 @@ public class ActivityAutoTaxiComplaint extends ActionBarActivity {
 	TextView txt_Message, txt_To, txt_From;
 	private static final int REQUEST_CODE = 1;
 	private static final int CAMERA_REQUEST = 1888;
+	Spinner spinner_RtoList;
 
 	String mail_subject = "Auto/Taxi Complaint generated From Maha RTO App.";
 	String motorVehicleNumber;
@@ -90,6 +106,7 @@ public class ActivityAutoTaxiComplaint extends ActionBarActivity {
 	String ExcessFare = " ";
 	String IDNotDisplayed = " ";
 	String RudeBehave = " ";
+	String strMH;
 
 	@SuppressLint("SimpleDateFormat")
 	@Override
@@ -138,11 +155,12 @@ public class ActivityAutoTaxiComplaint extends ActionBarActivity {
 		numberPicker3.setMinValue(0);
 		numberPicker4.setMaxValue(9);
 		numberPicker4.setMinValue(0);
-		date = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
+		date = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
 
 		btn_SendData.setOnClickListener(new View.OnClickListener() {
 
-			public void onClick(View v) {
+			public void onClick(View v) 
+			{
 				// TODO Auto-generated method stub
 
 				if (radioBtn_Auto.isChecked() == true) {
@@ -161,38 +179,16 @@ public class ActivityAutoTaxiComplaint extends ActionBarActivity {
 
 				getdata();
 				if (checkValidation())
-					// submitForm();
+				{	// submitForm();
+					
+					new uploadData().execute();
 
-					sendMail(edtEmailID.getText().toString(), mail_subject,
-							" Dear Admin \n Below is the details of complaint \n \n Complaint's Name:"
-									+ edtComplainantName.getText().toString()
-									+ " \n Mobile Number :"
-									+ edtPhoneNum.getText().toString()
-									+ " \n Email Id :"
-									+ edtEmailID.getText().toString()
-									+ " \n Motor Vehicle Type :"
-									+ motor_VehicleType
-									+ "\n Motor Vehicle Number :"
-									+ motorVehicleNumber
-									+ "\n Complaint Type :"
-									+ complaint_Type
-									+ "\n Rout From :"
-									+ edtRouteFrom.getText().toString()
-									+ "\n Rout To :"
-									+ edtRouteTo.getText().toString()
-									+ "\n Complaint Date :"
-									+ date
-									+ "\n Camplaint Time :"
-									+ time
-									+ "\n Complaint Address :"
-									+ edtComplainantAddress.getText()
-											.toString() + "\n Other Message :"
-									+ edtMessage.getText().toString());
+				}
 
 				else
-					Toast.makeText(ActivityAutoTaxiComplaint.this,
-							"Please fill the details", Toast.LENGTH_LONG)
-							.show();
+				{
+					//Toast.makeText(ActivityAutoTaxiComplaint.this,"Please fill the details", Toast.LENGTH_LONG).show();
+				}
 
 			}
 
@@ -206,14 +202,51 @@ public class ActivityAutoTaxiComplaint extends ActionBarActivity {
 				if (!Validation.hasText(edtComplainantAddress))
 					ret = false;
 				if (!Validation.hasText(edtRouteFrom))
-					ret = false;
+					//ret = false;
 				if (!Validation.hasText(edtRouteTo))
-					ret = false;
+					//ret = false;
 
 				if (!Validation.isEmailAddress(edtEmailID, true))
 					ret = false;
 				if (!Validation.isPhoneNumber(edtPhoneNum, false))
 					ret = false;
+				if(!((edtPhoneNum.getText().length())==10))
+				{
+					ret = false;
+					if(ActivityLanguage.lang.equalsIgnoreCase("english"))
+					{
+						
+						AlertDialog show = new AlertDialog.Builder(ActivityAutoTaxiComplaint.this)
+		                .setTitle("Message")
+		                .setMessage("  Mobile number is not 10 digits  ")
+		                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+		                    public void onClick(DialogInterface dialog, int which) { 
+		                        // continue with delete
+		                    }
+		                 })
+		                
+		                //.setIcon(android.R.drawable.actionbar)
+		                 .show();
+						
+					
+					}
+					else
+					{
+						
+						AlertDialog show = new AlertDialog.Builder(ActivityAutoTaxiComplaint.this)
+		                .setTitle("संदेश")
+		                .setMessage("मोबाइल क्रमांक 10 अंकी नाही")
+		                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+		                    public void onClick(DialogInterface dialog, int which) { 
+		                        // continue with delete
+		                    }
+		                 })
+		                
+		                //.setIcon(android.R.drawable.actionbar)
+		                 .show();
+						
+					}
+				}
 
 				return ret;
 			}
@@ -301,22 +334,14 @@ public class ActivityAutoTaxiComplaint extends ActionBarActivity {
 		}
 
 		time = "" + timePicker.getCurrentHour() + ":"
-				+ timePicker.getCurrentMinute() + ":" + AM_PM;
+				+ timePicker.getCurrentMinute() + ":"
+				+ "00 " +
+				AM_PM;
 
 		if (chkBoxRefusal.isChecked() == true) {
 
 			Refusal = chkBoxRefusal.getText().toString();
-			// chkBoxOther = (CheckBox) findViewById(R.id.chkBoxOther);
-			// chkBoxTakLongDistRoute = (CheckBox)
-			// findViewById(R.id.chkBoxTakLongDistRoute);
-			// chkBoxExcessFare = (CheckBox)
-			// findViewById(R.id.chkBoxExcessFare);
-			// chkBoxIDNotDisplayed = (CheckBox)
-			// findViewById(R.id.chkBoxIDNotDisplayed);
-			// chkBoxRudeBehave = (CheckBox)
-			// findViewById(R.id.chkBoxRudeBehave);
-
-			// Refusal,Other,LongDistRoute,ExcessFare,IDNotDisplayed,RudeBehave;
+			
 		}
 		if (chkBoxRudeBehave.isChecked()) {
 			RudeBehave = chkBoxRudeBehave.getText().toString();
@@ -385,6 +410,12 @@ public class ActivityAutoTaxiComplaint extends ActionBarActivity {
 
 		edtRouteTo = (EditText) findViewById(R.id.edtRouteTo);
 		edtRouteFrom = (EditText) findViewById(R.id.edtRouteFrom);
+		
+		
+		
+		spinner_RtoList= (Spinner)findViewById(R.id.spinner_RtoList);
+		
+		
 
 	}
 
@@ -631,7 +662,8 @@ public class ActivityAutoTaxiComplaint extends ActionBarActivity {
 
 	}
 
-	public void itemAuto1(View v) {
+	public void itemAuto1(View v)
+	{
 		// code to check if this checkbox is checked!
 		if (radioBtn_Auto.isChecked() == true) {
 
@@ -640,5 +672,159 @@ public class ActivityAutoTaxiComplaint extends ActionBarActivity {
 		}
 
 	}
+	
+	
+	
+
+    private class uploadData extends AsyncTask<Void, Void, Void>
+    {
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            mProgressDialog = new ProgressDialog(ActivityAutoTaxiComplaint.this);
+            mProgressDialog.setMessage("Uploading your complain ... ");
+            mProgressDialog.setCancelable(false);
+            mProgressDialog.show();
+
+        }
+
+        @Override
+        protected Void doInBackground(Void... params)
+        
+        
+        
+        
+        {
+        	
+        	String mob_no =edtPhoneNum.getText().toString();
+        	String stremail=edtEmailID.getText().toString();
+        	strMH= spinner_RtoList.getSelectedItem().toString();
+        	
+        	 
+        	String fail ="jfkhakfhaskfh";
+        	
+        		String complain_data1=   
+        			
+        				"MobileApp|" +
+        				"|" +
+        				"|" +
+        				"|" +
+        				""+motor_VehicleType+"|" +
+                        ""+motorVehicleNumber+"|" +
+        				""+edtMessage.getText().toString()+"|" +
+        				"1000002|" +
+        				 ""+date+"|" +
+        				 ""+time+"|" +
+        				""+edtPhoneNum.getText().toString()+"|" +
+        				""+edtComplainantName.getText().toString()+"|" +
+        				""+edtComplainantAddress.getText().toString()+"|" +
+        				""+edtEmailID.getText().toString()+"|" +
+        				"|" +
+        				"|" +
+        				"|" +
+        				""+spinner_RtoList.getSelectedItem().toString()+"|";
+        	
+        	
+            ArrayList<NameValuePair> nameValuePairs=new ArrayList<NameValuePair>();
+            nameValuePairs.add(new BasicNameValuePair("COMPLAINT_DATA",complain_data1));   // rto office         
+            nameValuePairs.add(new BasicNameValuePair("COMPLAINT_TYPE","1|2|3"));
+
+            // test
+            strTest=ServerAccess1.getJSONfromURL( "http://testmmvd.mahaonlinegov.in/Public/RegisterComplaint_Public.aspx" ,nameValuePairs);
+            //jsonobject1 = ServerAccess.getJSONfromURL( "http://hardcastlegis.in/pmc/databaseAccess.php", nameValuePairs);
+
+            return null;
+        }
+        @Override
+        protected void onPostExecute(Void args)
+        {
+            if (mProgressDialog.isShowing())
+                mProgressDialog.dismiss();
+            
+            String word = "Success";
+          
+            if (strTest.contains(word)) 
+            {
+            	if(ActivityLanguage.lang.equalsIgnoreCase("english"))
+				{
+                
+			            	AlertDialog show = new AlertDialog.Builder(ActivityAutoTaxiComplaint.this)
+			                .setTitle("Message")
+			                .setMessage("Your complain has been added succesfully.")
+			                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+			                    public void onClick(DialogInterface dialog, int which) { 
+			                        // continue with delete
+			                    }
+			                 })
+			                
+			                //.setIcon(android.R.drawable.ic_dialog_alert)
+			                 .show();
+				}
+            	else
+            	{
+            		
+            		AlertDialog show = new AlertDialog.Builder(ActivityAutoTaxiComplaint.this)
+	                .setTitle("संदेश")
+	                .setMessage("तक्रारची नोंद घेण्यात आली")
+	                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+	                    public void onClick(DialogInterface dialog, int which) { 
+	                        // continue with delete
+	                    }
+	                 })
+	                
+	                //.setIcon(android.R.drawable.ic_dialog_alert)
+	                 .show();
+            		
+            	}
+            	
+            }
+            else
+            {
+            	
+            	if(ActivityLanguage.lang.equalsIgnoreCase("english"))
+				{
+            		
+		            	AlertDialog show = new AlertDialog.Builder(ActivityAutoTaxiComplaint.this)
+		                .setTitle("Message")
+		                .setMessage("Error in upload. please try again.")
+		                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+		                    public void onClick(DialogInterface dialog, int which) { 
+		                        // continue with delete
+		                    }
+		                 })
+		                
+		                //.setIcon(android.R.drawable.actionbar)
+		                 .show();
+            	}
+            	else
+            	{
+            		AlertDialog show = new AlertDialog.Builder(ActivityAutoTaxiComplaint.this)
+	                .setTitle("संदेश")
+	                .setMessage("कनेक्शन त्रुटी , कृपया पुन्हा प्रयत्न करा .")
+	                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+	                    public void onClick(DialogInterface dialog, int which) { 
+	                        // continue with delete
+	                    }
+	                 })
+	                
+	                //.setIcon(android.R.drawable.actionbar)
+	                 .show();
+            		
+            		
+            	}
+            	
+            }
+            
+            
+            
+
+            Log.d("result ", ""+strTest);
+
+            //result.setText("Complain uploaded succesfuly");
+
+        }
+    }
+	
 
 }

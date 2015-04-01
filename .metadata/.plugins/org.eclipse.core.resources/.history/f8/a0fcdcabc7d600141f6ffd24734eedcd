@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+				     <TextView
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:text="@string/check_lic_to_apply"
+				                android:textAppearance="?android:attr/textAppearanceMedium" />
+				
+				     <Switch
+				         android:id="@+id/switch1"
+				         android:layout_width="wrap_content"
+				         android:layout_height="wrap_content"
+				         android:text="Switch" />
+				     
+				     
+	    </LinearLayout> 
+				     
+
+        <CheckBox
+            android:id="@+id/covs3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs3" />
+
+        <CheckBox
+            android:id="@+id/covs5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs5" />
+
+        <CheckBox
+            android:id="@+id/covs8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs8" />
+
+        <CheckBox
+            android:id="@+id/covs9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs9" />
+
+        <CheckBox
+            android:id="@+id/covs4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs4" />
+
+        <CheckBox
+            android:id="@+id/covs7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs7" />
+
+        <CheckBox
+            android:id="@+id/covs6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs6" />
+
+        <CheckBox
+            android:id="@+id/covs10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs10" />
+
+        <CheckBox
+            android:id="@+id/covs12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs9" />
+
+        <CheckBox
+            android:id="@+id/covs13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs13" />
+
+        <CheckBox
+            android:id="@+id/covs2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs2" />
+
+        <CheckBox
+            android:id="@+id/covs53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs53" />
+
+        <CheckBox
+            android:id="@+id/covs54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs54" />
+
+        <CheckBox
+            android:id="@+id/covs16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs16" />
+
+        <CheckBox
+            android:id="@+id/covs15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs15" />
+
+        <CheckBox
+            android:id="@+id/covs17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs17" />
+
+        <CheckBox
+            android:id="@+id/covs58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs58" />
+
+        <CheckBox
+            android:id="@+id/covs59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs59" />
+
+        <CheckBox
+            android:id="@+id/covs65"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/covs65" />
+
+        <Button
+            android:id="@+id/btn_SendData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="    Send    "
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,59 @@
+package com.example.punerto.Activity;
+
+
+import com.androidexample.gcm.R;
+
+
+import android.app.TabActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.TabHost;
+import android.widget.TabHost.TabSpec;
+
+public class ActivityLearnLicAppointment_New extends TabActivity {
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        
+ TabHost tabHost = getTabHost();
+        
+        // Tab for Photos
+        TabSpec tab1 = tabHost.newTabSpec("1");
+        tab1.setIndicator("Step 1", getResources().getDrawable(R.drawable.icon_photos_tab));
+        Intent photosIntent = new Intent(this, ActivityLearnLicAppointment_Tab1.class);
+        tab1.setContent(photosIntent);
+        
+        // Tab for Songs
+        TabSpec tab2 = tabHost.newTabSpec("2");
+        // setting Title and Icon for the Tab
+        tab2.setIndicator("Step 2", getResources().getDrawable(R.drawable.icon_songs_tab));
+        Intent songsIntent = new Intent(this, ActivityLearnLicAppointment_Tab2.class);
+        tab2.setContent(songsIntent);
+        
+        // Tab for Videos
+        TabSpec tab3 = tabHost.newTabSpec("3");
+        tab3.setIndicator("Step 3", getResources().getDrawable(R.drawable.icon_videos_tab));
+        Intent videosIntent = new Intent(this, ActivityLearnLicAppointment_Tab3.class);
+        tab3.setContent(videosIntent);
+        
+        TabSpec tab4 = tabHost.newTabSpec("4");
+        tab4.setIndicator("Step 4", getResources().getDrawable(R.drawable.icon_photos_tab));
+        Intent photosIntent1 = new Intent(this, ActivityLearnLicAppointment_Tab4.class);
+        tab4.setContent(photosIntent1);
+        
+        TabSpec tab5 = tabHost.newTabSpec("5");
+        tab5.setIndicator("Step 5", getResources().getDrawable(R.drawable.icon_photos_tab));
+        Intent photosIntent2 = new Intent(this, ActivityLearnLicAppointment_Tab5.class);
+        tab5.setContent(photosIntent2);
+        
+        // Adding all TabSpec to TabHost
+        tabHost.addTab(tab1); 
+        tabHost.addTab(tab2); 
+        tabHost.addTab(tab3); 
+        tabHost.addTab(tab4);
+        tabHost.addTab(tab5);
+    }
+}

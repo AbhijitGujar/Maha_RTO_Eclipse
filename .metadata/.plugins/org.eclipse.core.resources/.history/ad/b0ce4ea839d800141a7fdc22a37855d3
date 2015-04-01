@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MAH RTO</string>
+  
+    <string name="action_settings">Settings</string>
+    
+    
+     <string name="lltitle">Learning License Application</string>
+     
+     
+     
+     <string name="first_name">First name</string>
+     <string name="middle_name">Middle name</string>
+     <string name="last_name">Last name</string>
+     
+    <string name="gender">Gender</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="radio_Others">Others</string>
+    <string name="dob">Date of Birth</string>
+    <string name="b_place">Type your place of birth</string>
+    <string name="migrated">If place of birth is out side India, Month and Year when migrated to India :</string>
+    <string name="mig_month">month</string>
+    <string name="mig_year">  year  </string>
+    <string name="b_country">  Select birth country </string>
+    <string name="ll_email"> your email address </string>
+    <string name="name_of">Select Relation </string>
+    <string name="ll_father">Father</string>
+    <string name="ll_mother"> Mother </string>
+    <string name="ll_husband"> Husband </string>
+    <string name="ll_guardian"> Guradian </string>
+    
+    
+    
+    
+    
+    <string name="p_as_P"> Permanent address same as present address </string>
+    
+     <string name="p_address"> Permanent Address details  </string>
+     <string name="p_house_no"> House number </string>
+     <string name="p_street_locality"> Street and locality  </string>
+     <string name="p_city_village"> City or village </string>
+     <string name="p_dist"> Select district </string>
+     <string name="p_state"> Select state </string>
+      <string name="p_pin"> Pin code </string>
+     <string name="p_phone"> Phone number </string>
+     <string name="p_mobile"> Mobile number  </string>
+     <string name="p_duration"> Duration of stay </string>
+     <string name="p_years"> Years </string>
+     <string name="p_months"> Months </string>
+     
+	<string name="citizenship_status_type"> Citizenship by </string>
+	<string name="ll_by_birth"> Birth </string>
+	<string name="ll_by_regis"> Registration </string>
+	<string name="ll_descent"> Descent </string>
+	<string name="ll_naturalization"> Naturalization </string>
+	<string name="non_indian"> Non Indian </string>
+	<string name="edu_qualification"> Educational qulaification </string>
+	<string name="identification_marks"> Identification marks </string>
+	<string name="identification_marks1"> Describe Identification marks here</string>
+	<string name="blood_group"> Blood Group:  </string>
+	
+	<string name="check_lic_to_apply"> Check the type of license that you want to apply for:  </string>
+	<string name="doc_number"> Select number of documnets you want to upload: </string>
+	
+	<string name="doc_type_label"> Select Type of document: </string>
+	
+	<string name="issu_autho">Enter the issuing authority here</string>
+	<string name="date_of_issue">Select date of issue:  </string>
+	
+	<string name="label_doc1">Details of First Document </string>
+	<string name="label_doc2">Details of Second Document </string>
+	<string name="label_doc3">Details of Third Document </string>
+	<string name="label_doc4">Details of Fourth Document </string>
+	<string name="label_doc5">Details of Fifth Document </string>
+	
+		
+	<string name="lic_no_doc"> Licence Certificate Badge number </string>
+	<string name="datelabel_doc"> Select date: </string>
+	
+
+	
+	<string name="covs3"> MOTOR CYCLE WITH GEAR (NON TRANSPORT)  </string>
+	<string name="covs5">LMV -3 WHEELER NT  </string>
+	<string name="covs8">LMV -3 WHEELER CAB  </string>
+	<string name="covs9"> LMV -3 WHEELER TRANSPORT GOODS NON PSV  </string>
+	<string name="covs4"> LMV-NT-CAR </string>
+	<string name="covs7">LMV (TRANSPORT)  </string>
+	<string name="covs6">LMV-TRACTOR-NT </string>
+	<string name="covs10">TRANSPORT VECHICLE - M/HMV(RIGID CHASSIS) - GOODS  </string>
+	<string name="covs12">INVALID CARRIAGE VEHICLE  </string>
+	<string name="covs13">ROAD ROLLER  </string>
+	<string name="covs2"> MOTOR CYCLE WITHOUT GEAR(NON TRANSPORT)  </string>
+	<string name="covs53">MOTOR CYCLE WITH GEAR (TRANSPORT)  </string>
+	<string name="covs54"> MOTOR CYCLE WITH GEAR(TRANSPORT)PSV </string>
+	<string name="covs16">LMV-TRANSPORT-PSV-CAB </string>
+	<string name="covs15"> LMV-TRACTOR TRAILER(TRANSPORT) </string>
+	<string name="covs17">TRANSPORT VEHICLE-M/HMV(RIGID CHASSIS) PSV-BUS </string>
+	<string name="covs58"> TRANSPORT VEHICLE-M/HMV-ARTICULATED </string>
+	<string name="covs59"> TRANSPORT VEHICLE-M/HMV - TRACTOR TRAILER </string>
+	<string name="covs65">OTHERS - CONSTRUCTION EQUIPMENTS  </string>
+	
+	
+	
+     
+     
+     <string name="parentletterforbelow18age">parent's letter if below 18 age</string>
+     <string name="allnecessarycertificates">allnecessarycertificates</string>
+     <string name="examptedmadicaltest">examptedmadicaltest</string>
+     <string name="examptedpreliminarytest">examptedpreliminarytest</string>
+     <string name="convicted">convicted</string>
+     <string name="attdlnumber">attdlnumber</string>
+     <string name="date_attdtofconviction">date_attdtofconviction</string>
+     <string name="attreason">attreason</string>
+     
+     
+     
+    <string-array name="edu_list">
+        <item>Msc</item>
+        <item>MBA</item>
+       
+    </string-array>
+     
+    
+    
+    
+     
+    <string-array name="blood_group_list">
+        <item>A +</item>
+        <item>A -</item>
+        <item>B +</item>
+        <item>B -</item>
+        <item>O +</item>
+        <item>O -</item>
+        <item>M +</item>
+        <item>M -</item>
+        <item>AB +</item>
+        <item>AB -</item>
+     
+    </string-array>
+     
+     
+     <string-array name="dist_list">
+        <item>Pune</item>
+        <item>Mumbai</item>
+        <item>Satara</item>
+     
+    </string-array>
+    
+     <string-array name="country_list">
+        <item>India</item>
+        <item>China</item>
+        <item>USA</item>
+     
+    </string-array>
+     
+    <string-array name="state_list">
+        <item>Maharashtra</item>
+        <item>Gujrat</item>
+        <item>Delhi</item>
+     
+    </string-array>
+     
+
+    <string-array name="spinner_item">
+        <item>MH 01 RTO Mumbai Central</item>
+        <item>MH 02 RTO Mumbai (West)</item>
+        <item>MH 03 RTO Mumbai (East)</item>
+        <item>MH 04 RTO Thane</item>
+        <item>MH 05 Dy.RTO Kalyan</item>
+        <item>MH 06 Dy.RTO Pen-Raigad</item>
+        <item>MH 07 Dy.RTO Sindhudurg</item>
+        <item>MH 08 Dy.RTO Ratnagiri</item>
+        <item>MH 09 RTO Kolhapur</item>
+        <item>MH 10 Dy.RTO Sangli</item>
+        <item>MH 11 Dy.RTO Satara</item>
+        <item>MH 12 RTO Pune</item>
+        <item>MH 13 Dy.RTO Solapur</item>
+        <item>MH 14 Dy.RTO Pimpri-chinchwad</item>
+        <item>MH 15 RTO Nashik</item>
+        <item>MH 16 Dy.RTO Ahmednagar</item>
+        <item>MH 17 Dy.RTO Shrirampur</item>
+        <item>MH 18 Dy.RTO Dhule</item>
+        <item>MH 19 Dy.RTO Jalgaon</item>
+        <item>MH 20 RTO Aurangabad</item>
+        <item>MH 21 Dy. RTO Jalna</item>
+        <item>MH 22 Dy. RTO Parbhani</item>
+        <item>MH 23 Dy.RTO Beed</item>
+        <item>MH 24 RTO Latur</item>
+        <item>MH 25 Dy.RTO Osmanabad</item>
+        <item>MH 26 RTO Nanded</item>
+        <item>MH 27 RTO Amravati</item>
+        <item>MH 28 Dy.RTO Buldhana</item>
+        <item>MH 29 Dy.RTO Yavatmal</item>
+        <item>MH 30 Dy.RTO Akola</item>
+        <item>MH 31 RTO Nagpur(Urban</item>
+        <item>MH 32 Dy.RTO Wardha</item>
+        <item>MH 33 Dy.RTO Gadchiroli</item>
+        <item>MH 34 Dy.RTO Chandrapur</item>
+        <item>MH 35 Dy.RTO Gondia</item>
+        <item>MH 36 Dy.RTO Bhandara</item>
+        <item>MH 37 Dy.RTO Washim</item>
+        <item>MH 38 Dy. RTO Hingoli</item>
+        <item>MH 39 Dy.RTO Nandurbar</item>
+        <item>MH 40 RTO Nagpur(Rural)</item>
+        <item>MH 41 Dy.RTO Malegaon</item>
+        <item>MH 42 Dy.RTO Baramati</item>
+        <item>MH 43 Dy.RTO Vashi-Navi Mum</item>
+        <item>MH 44 Dy. RTO Ambajogai</item>
+        <item>MH 45 Dy.RTO Akluj</item>
+        <item>MH 46 RTO Panvel</item>
+        <item>MH 47 Dy.RTO Borivali</item>
+        <item>MH 48 Dy.RTO Vasai</item>
+        <item>MH 49 Dy.RTO Nagpur (EAST</item>
+        <item>MH 50 Dy.RTO Karad</item>
+    </string-array>
+    <string-array name="spinner_onlyMhItem">
+        <item>MH 01</item>
+        <item>MH 02</item>
+        <item>MH 03</item>
+        <item>MH 04</item>
+        <item>MH 05</item>
+        <item>MH 06</item>
+        <item>MH 07</item>
+        <item>MH 08</item>
+        <item>MH 09</item>
+        <item>MH 10</item>
+        <item>MH 11</item>
+        <item>MH 12</item>
+        <item>MH 13</item>
+        <item>MH 14</item>
+        <item>MH 15</item>
+        <item>MH 16</item>
+        <item>MH 17</item>
+        <item>MH 18</item>
+        <item>MH 19</item>
+        <item>MH 20</item>
+        <item>MH 21</item>
+        <item>MH 22</item>
+        <item>MH 23</item>
+        <item>MH 24</item>
+        <item>MH 25</item>
+        <item>MH 26</item>
+        <item>MH 27</item>
+        <item>MH 28</item>
+        <item>MH 29</item>
+        <item>MH 30</item>
+        <item>MH 31</item>
+        <item>MH 32</item>
+        <item>MH 33</item>
+        <item>MH 34</item>
+        <item>MH 35</item>
+        <item>MH 36</item>
+        <item>MH 37</item>
+        <item>MH 38</item>
+        <item>MH 39</item>
+        <item>MH 40</item>
+        <item>MH 41</item>
+        <item>MH 42</item>
+        <item>MH 43</item>
+        <item>MH 44</item>
+        <item>MH 45</item>
+        <item>MH 46</item>
+        <item>MH 47</item>
+        <item>MH 48</item>
+        <item>MH 49</item>
+        <item>MH 50</item>
+    </string-array>
+    <string-array name="spinner_itemMarathi">
+        <item>एमएच- 01  प्रादेशिक परिवहन अधिकार,मुंबई (मध्य)</item>
+        <item>एमएच- 02 प्रादेशिक परिवहन अधिकारी,मुंबई (पश्चिम)</item>
+        <item>एमएच- 03 प्रादेशिक परिवहन अधिकारी,मुंबई(पूर्व)</item>
+        <item>एमएच- 04 प्रादेशिक परिवहन अधिकारी, ठाणे</item>
+        <item>एमएच- 05 उप प्रादेशिक परिवहन अधिकारी,कल्याण</item>
+        <item>एमएच- 06 उप प्रादेशिक परिवहन अधिकारी, पेण</item>
+        <item>एमएच- 07 उप प्रादेशिक परिवहन अधिकारी, सिंधुदुर्ग</item>
+        <item>एमएच- 08 उप प्रादेशिक परिवहन अधिकारी, रत्नागिरी</item>
+        <item>एमएच- 09 प्रादेशिक परिवहन अधिकारी,कोल्हापूर</item>
+        <item>एमएच- 10 उप प्रादेशिक परिवहन अधिकारी, सांगली</item>
+        <item>एमएच- 11 उप प्रादेशिक परिवहन अधिकारी, सातारा</item>
+        <item>एमएच- 12 प्रादेशिक परिवहन अधिकारी, पुणे</item>
+        <item>एमएच- 13 उप प्रादेशिक परिवहन अधिकारी, सोलापूर</item>
+        <item>एमएच- 14 उप प्रादेशिक परिवहन अधिकारी, पिंपरी -चिंचवड </item>
+        <item>एमएच- 15 प्रादेशिक परिवहन अधिकारी, नाशिक </item>
+        <item>एमएच- 16 उप प्रादेशिक परिवहन अधिकारी, अहमदनगर </item>
+        <item>एमएच- 17 उप प्रादेशिक परिवहन अधिकारी, श्रीरामपूर</item>
+        <item>एमएच- 18 प्रादेशिक परिवहन अधिकारी, धुळे </item>
+        <item>एमएच- 19 उप प्रादेशिक परिवहन अधिकारी, जळगाव</item>
+        <item>एमएच- 20 प्रादेशिक परिवहन अधिकारी, औरंगाबाद</item>
+        <item>एमएच- 21 उप प्रादेशिक परिवहन अधिकारी, जालना </item>
+        <item>एमएच- 22 उप प्रादेशिक परिवहन अधिकारी, परभणी</item>
+        <item>एमएच- 23 उप प्रादेशिक परिवहन अधिकारी, बीड</item>
+        <item>एमएच- 24 प्रादेशिक परिवहन अधिकारी, लातूर</item>
+        <item>एमएच- 25 उप प्रादेशिक ारिवहन कार्यालय, उस्मानाबाद </item>
+        <item>एमएच- 26 प्रादेशिक परिवहन अधिकारी, नांदेड </item>
+        <item>एमएच- 27 प्रादेशिक परिवहन अधिकारी, अमरावती</item>
+        <item>एमएच- 28 उप प्रादेशिक परिवहन अधिकारी, बुलढाणा</item>
+        <item>एमएच- 29 उप प्रादेशिक परिवहन अधिकारी, यवतमाळ</item>
+        <item>एमएच- 30 उप प्रादेशिक परिवहन अधिकारी, अकोला</item>
+        <item>एमएच- 31 प्रादेशिक परिवहन अधिकारी, नागपूर(शहर)</item>
+        <item>एमएच- 32 उप प्रादेशिक परिवहन अधिकारी, वर्धा</item>
+        <item>एमएच- 33 उप प्रादेशिक परिवहन अधिकारी, गडचिरोली</item>
+        <item>एमएच- 34 उप प्रादेशिक परिवहन अधिकारी, चंद्रपूर </item>
+        <item>एमएच- 35 उप प्रादेशिक परिवहन अधिकारी, गोंदिया </item>
+        <item>एमएच- 36 उप प्रादेशिक परिवहन अधिकारी, भंडारा </item>
+        <item>एमएच- 37 उप प्रादेशिक परिवहन अधिकारी, वाशिम</item>
+        <item>एमएच- 38 उप प्रादेशिक परिवहन अधिकारी, हिंगोली</item>
+        <item>एमएच- 39 उप प्रादेशिक परिवहन अधिकारी, नंदूरबार</item>
+        <item>एमएच- 40 प्रादेशिक परिवहन अधिकारी, नागपूर(ग्रामीण)</item>
+        <item>एमएच- 41 उप प्रादेशिक परिवहन अधिकारी, मालेगांवs</item>
+        <item>एमएच- 42 उप प्रादेशिक परिवहन अधिकारी, बारामती</item>
+        <item>एमएच- 43 उप प्रादेशिक परिवहन अधिकारी, वाशी</item>
+        <item>एमएच- 44 उप प्रादेशिक परिवहन अधिकारी, अंबेजोगाई</item>
+        <item>एमएच- 45 उप प्रादेशिक परिवहन अधिकारी, अकलूज</item>
+        <item>एमएच- 46 प्रादेशिक परिवहन अधिकारी, पनवेल</item>
+        <item>एमएच- 47 उप प्रादेशिक परिवहन अधिकारी, बोरीवली </item>
+        <item>एमएच- 48 उप प्रादेशिक परिवहन अधिकारी, वसई</item>
+        <item>एमएच- 49 उप प्रादेशिक परिवहन अधिकारी, नागपूर शहर(पूर्व)</item>
+        <item>एमएच- 50 उप प्रादेशिक परिवहन अधिकारी, कराड.</item>
+    </string-array>
+    <string-array name="spinner_onlyMhItemMarathi">
+        <item>एमएच- 01</item>
+        <item>एमएच- 02</item>
+        <item>एमएच- 03</item>
+        <item>एमएच- 04</item>
+        <item>एमएच- 05</item>
+        <item>एमएच- 06</item>
+        <item>एमएच- 07</item>
+        <item>एमएच- 08</item>
+        <item>एमएच- 09</item>
+        <item>एमएच- 10</item>
+        <item>एमएच- 11</item>
+        <item>एमएच- 12</item>
+        <item>एमएच- 13</item>
+        <item>एमएच- 14</item>
+        <item>एमएच- 15</item>
+        <item>एमएच- 16</item>
+        <item>एमएच- 17</item>
+        <item>एमएच- 18</item>
+        <item>एमएच- 19</item>
+        <item>एमएच- 20</item>
+        <item>एमएच- 21</item>
+        <item>एमएच- 22</item>
+        <item>एमएच- 23</item>
+        <item>एमएच- 24</item>
+        <item>एमएच- 25</item>
+        <item>एमएच- 26</item>
+        <item>एमएच- 27</item>
+        <item>एमएच- 28</item>
+        <item>एमएच- 29</item>
+        <item>एमएच- 30</item>
+        <item>एमएच- 31</item>
+        <item>एमएच- 32</item>
+        <item>एमएच- 33</item>
+        <item>एमएच- 34</item>
+        <item>एमएच- 35</item>
+        <item>एमएच- 36</item>
+        <item>एमएच- 37</item>
+        <item>एमएच- 38</item>
+        <item>एमएच- 39</item>
+        <item>एमएच- 40</item>
+        <item>एमएच- 41</item>
+        <item>एमएच- 42</item>
+        <item>एमएच- 43</item>
+        <item>एमएच- 44</item>
+        <item>एमएच- 45</item>
+        <item>एमएच- 46</item>
+        <item>एमएच- 47</item>
+        <item>एमएच- 48</item>
+        <item>एमएच- 49</item>
+        <item>एमएच- 50</item>
+    </string-array>
+    <string-array name="spinner_onlyFirstAlph">
+        <item></item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+ 
+    </string-array>
+    <string-array name="spinner_onlyLastAlph">
+        <item></item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+       
+    </string-array>
+
+    <string name="underline"><u>NEW INITIATIVES OF THE DEPARTMENT</u></string>
+    <string name="underline_marathi"><u>विभागाकडून घेण्यात येणारे नवीन पुढाकार </u></string>
+    <string name="rto_officess">प्रादेशिक परिवहन कार्यालये </string>
+    <string name="auto_rikshaw">ऑटो तक्रार </string>
+    <string name="other_complaint">इतर तक्रार  </string>
+    <string name="road_safety">रस्ता सुरक्षा  </string>
+    <string name="practice_test"> सराव परीक्षा  </string>
+    <string name="rto_help_desk">  आर टी ओ मदत केंद्र  </string>
+    <string name="new_projects">   नवीन उपक्रम  </string>
+    <string name="faq">  सतत  विचारले जाणारे प्रश्न   </string>
+    <string name="school_bus"> शालेय विद्यार्थी वाहतूक नियमावली  </string>
+    <string name="road_sign"> वाहतुकीचे चिन्हे  </string>
+    <string name="credits">    आभार  </string>
+    <string name="mandatory_sign">     सावधान करणारी चिन्हे   </string>
+    <string name="cautionary_sign">    आदेश देणारी चिन्हे  </string>
+    <string name="information_sign"> माहिती देणारी चिन्हे  </string>
+
+</resources>

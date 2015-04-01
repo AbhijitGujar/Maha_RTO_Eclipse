@@ -1,0 +1,100 @@
+package com.example.punerto.Activity;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import co.example.punerto.classes.RtoDialog;
+
+import com.androidexample.gcm.R;
+
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.RadioGroup;
+
+public class ActivityLearnLicAppointment_Tab5 extends Activity 
+{
+	LinearLayout lay1;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) 
+	{
+		super.onCreate(savedInstanceState);
+
+		if (ActivityLanguage.lang.equals("English")) 
+			setContentView(R.layout.activity_learn_lic_app_tab5);
+		else
+			setContentView(R.layout.activity_learn_lic_app_tab5);
+		
+		 lay1 = (LinearLayout) findViewById(R.id.lay_convicted);
+		 
+		 
+		 
+		 
+		 
+		 
+		
+		//RtoDialog.showNeutralDialog(ActivityLearnLicAppointment_Tab1.this,"Form Restrictions","Special Character (″ , & , < , > , ′ ) are not allowed");
+		
+	}
+	
+	public void onCheckboxClicked(View view) {
+	    // Is the view now checked?
+	    boolean checked = ((CheckBox) view).isChecked();
+	    
+	    switch(view.getId()) 
+	    {
+	        case R.id.parentletterforbelow18age:
+	            if (checked)
+	            	{
+	            	
+	            	}
+	            else
+	            	{}
+	            break;
+	        case R.id.allnecessarycertificates:
+	            if (checked)
+	            	{}
+	            else
+	            	{}
+	            break;
+	       
+	        case R.id.examptedmadicaltest:
+	            if (checked)
+	            	{}
+	            else
+	            	{}
+	            break;
+	       
+	        case R.id.examptedpreliminarytest:
+	            if (checked)
+	            	{}
+	            else
+	            	{}
+	            break;
+	        // TODO: Veggie sandwich
+	        case R.id.convicted:
+	            if (checked)
+	            	{
+	            	lay1.setVisibility(View.VISIBLE);
+	            	}
+	            else
+	            	{
+	            	lay1.setVisibility(View.GONE);
+	            	}
+	            break;
+	       
+	            
+	    }
+	}
+	
+	
+}

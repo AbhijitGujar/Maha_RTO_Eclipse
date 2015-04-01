@@ -1,0 +1,209 @@
+package com.example.punerto.Activity;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import co.example.punerto.classes.ActivityLearnLicAppointment;
+import co.example.punerto.classes.RtoDialog;
+
+import com.androidexample.gcm.R;
+import com.example.punerto.Activity.ActivityLearnLicAppointment_Tab4.SelectDateFragment;
+
+
+import android.app.Activity;
+import android.app.DatePickerDialog;
+import android.app.Dialog;
+import android.app.DialogFragment;
+import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.View.OnFocusChangeListener;
+import android.view.inputmethod.EditorInfo;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.RadioGroup;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class ActivityLearnLicAppointment_Tab5 extends Activity 
+{
+	LinearLayout lay1;
+	EditText attdlnumber,date_attdtofconviction,attreason;
+	Button tab5;
+	boolean bolconvicted;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) 
+	{
+		super.onCreate(savedInstanceState);
+
+		if (ActivityLanguage.lang.equals("English")) 
+			setContentView(R.layout.activity_learn_lic_app_tab5);
+		else
+			setContentView(R.layout.activity_learn_lic_app_tab5);
+		
+		 lay1 = (LinearLayout) findViewById(R.id.lay_convicted);
+		 
+		 
+		 attdlnumber =(EditText) findViewById(R.id.attdlnumber);
+		 
+		 date_attdtofconviction =(EditText) findViewById(R.id.date_attdtofconviction);
+		 attreason =(EditText) findViewById(R.id.attreason);
+		 
+		
+		//RtoDialog.showNeutralDialog(ActivityLearnLicAppointment_Tab1.this,"Form Restrictions","Special Character (″ , & , < , > , ′ ) are not allowed");
+		 
+		 tab5 =(Button) findViewById(R.id.tab5);
+		 tab5.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) 
+			{
+				if(validateTab5())
+				{
+					
+					
+					
+				}
+				
+				
+			
+			}
+		 
+		 });
+		
+	}
+	
+	
+	private boolean validateTab5()
+	{
+		boolean ret = true;
+		
+		if(bolconvicted)
+		{
+			if (!Validation.hasText(edtComplainantName))
+				ret = false;
+			if (!Validation.hasText(edtComplainantName))
+				ret = false;
+			if (!Validation.hasText(edtComplainantName))
+				ret = false;
+			
+		}
+		
+		
+		return ret;
+		
+	}
+	
+
+	public void selectDate(View view) 
+	{	
+				
+		DialogFragment newFragment = new SelectDateFragment();
+		newFragment.show(getFragmentManager(), "DatePicker");
+	}
+	
+	public void populateSetDate(int year, int month, int day) 
+	{
+		
+	
+		date_attdtofconviction.setText(month+"/"+day+"/"+year);
+		
+		
+	}
+		public class SelectDateFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener 
+	{
+		@Override
+		public Dialog onCreateDialog(Bundle savedInstanceState) 
+		{
+		final Calendar calendar = Calendar.getInstance();
+		int yy = calendar.get(Calendar.YEAR);
+		int mm = calendar.get(Calendar.MONTH);
+		int dd = calendar.get(Calendar.DAY_OF_MONTH);
+		return new DatePickerDialog(getActivity(), this, yy, mm, dd);
+		}
+	
+		public void onDateSet(DatePicker view, int yy, int mm, int dd)
+		{
+			populateSetDate(yy, mm+1, dd);
+		}
+	}
+    
+	
+	
+	
+	public void onCheckboxClicked(View view) {
+	    // Is the view now checked?
+	    boolean checked = ((CheckBox) view).isChecked();
+	    
+	    switch(view.getId()) 
+	    {
+	        case R.id.parentletterforbelow18age:
+	            if (checked)
+	            	{
+	            	ActivityLearnLicAppointment.parentletterforbelow18age="y";
+	            	}
+	            else
+	            	{
+	            	ActivityLearnLicAppointment.parentletterforbelow18age="n";
+	            	}
+	            break;
+	        case R.id.allnecessarycertificates:
+	            if (checked)
+	            	{
+	            	ActivityLearnLicAppointment.allnecessarycertificates="y";
+	            	}
+	            else
+	            	{
+	            	ActivityLearnLicAppointment.allnecessarycertificates="n";
+	            	}
+	            break;
+	       
+	        case R.id.examptedmadicaltest:
+	            if (checked)
+	            	{
+	            	ActivityLearnLicAppointment.examptedmadicaltest="y";
+	            	}
+	            else
+	            	{
+	            	ActivityLearnLicAppointment.examptedmadicaltest="n";
+	            	}
+	            break;
+	       
+	        case R.id.examptedpreliminarytest:
+	            if (checked)
+	            	{
+	            	ActivityLearnLicAppointment.examptedpreliminarytest="y";
+	            	}
+	            else
+	            	{
+	            	ActivityLearnLicAppointment.examptedpreliminarytest="n";
+	            	}
+	            break;
+	       
+	        case R.id.convicted:
+	            if (checked)
+	            	{
+	            	lay1.setVisibility(View.VISIBLE);
+	            	bolconvicted=true;
+	            	}
+	            else
+	            	{
+	            	lay1.setVisibility(View.GONE);
+	            	bolconvicted=false;
+	            	}
+	            break;
+	       
+	            
+	    }
+	}
+	
+	
+}

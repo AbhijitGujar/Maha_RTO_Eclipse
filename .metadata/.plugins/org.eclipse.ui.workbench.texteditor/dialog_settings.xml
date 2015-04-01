@@ -2,37 +2,37 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Main" key="selection"/>
+		<item value="Toast" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="main"/>
-			<item value="ActivityMain"/>
-			<item value="About"/>
-			<item value="about"/>
-			<item value="org"/>
-			<item value="Toas"/>
-			<item value="For"/>
-			<item value="motorist."/>
+			<item value="Toast"/>
+			<item value="toasst"/>
+			<item value="textAppearanceLarge"/>
+			<item value=" &lt;View"/>
+			<item value="lic_no_doc1"/>
+			<item value="android:background=&quot;#FFFFFF&quot;"/>
+			<item value="gone"/>
+			<item value="tab"/>
 		</list>
 		<list key="replacehistory">
+			<item value="textAppearanceMedium"/>
+			<item value="textAppearanceLarge"/>
+			<item value=""/>
+			<item value="visible"/>
+			<item value="arr_nagpur_auto"/>
 			<item value="edtMessage"/>
 			<item value="edtEmailID"/>
 			<item value="edtRouteTo"/>
-			<item value="edtRouteFrom"/>
-			<item value="edtComplainantAddress"/>
-			<item value="edtComplainantName"/>
-			<item value="edtPhoneNum"/>
-			<item value="btn_SendData"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="257" key="DIALOG_WIDTH"/>
+		<item value="503" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="315" key="DIALOG_X_ORIGIN"/>
-		<item value="148" key="DIALOG_Y_ORIGIN"/>
+		<item value="1297" key="DIALOG_X_ORIGIN"/>
+		<item value="187" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

@@ -113,6 +113,27 @@
         </activity>
         <activity android:name="com.example.punerto.Activity.ActivityCitizenCharter" >
         </activity>
+         <activity android:name="com.example.punerto.Activity.ActivityLearnLicAppointment" >
+        </activity>
+        <activity android:name="com.example.punerto.Activity.ActivityLearnLicAppointment_New" >
+        </activity>
+        <activity android:name="com.example.punerto.Activity.ActivityLearnLicAppointment_Tab1" >
+        </activity>
+        
+       <activity android:name="com.example.punerto.Activity.ActivityLearnLicAppointment_Tab2" >
+        </activity>
+        
+       <activity android:name="com.example.punerto.Activity.ActivityLearnLicAppointment_Tab3" >
+        </activity>
+        
+       <activity android:name="com.example.punerto.Activity.ActivityLearnLicAppointment_Tab4" >
+        </activity>
+        
+        <activity android:name="com.example.punerto.Activity.ActivityLearnLicAppointment_Tab5" >
+        </activity>
+        
+         
+         
 
         <activity android:name="com.example.punerto.Activity.NatureOfWork" >
         </activity>

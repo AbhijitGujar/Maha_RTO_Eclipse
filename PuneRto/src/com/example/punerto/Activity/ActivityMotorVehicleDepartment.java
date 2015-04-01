@@ -103,7 +103,6 @@ public class ActivityMotorVehicleDepartment extends ActionBarActivity {
 				Intent intent = new Intent(ActivityMotorVehicleDepartment.this,
 						ActivityOrganizationChart1.class);
 				startActivity(intent);
-
 			}
 		});
 

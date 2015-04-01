@@ -6,6 +6,8 @@ import com.androidexample.gcm.RegisterActivity;
 import com.example.punerto.Activity.ActivityCitizenCharter;
 import com.example.punerto.Activity.ActivityCredits;
 import com.example.punerto.Activity.ActivityExpandableFaq;
+import com.example.punerto.Activity.ActivityLearnLicAppointment_New;
+import com.example.punerto.Activity.ActivityLearnLicAppointment_Tab1;
 import com.example.punerto.Activity.ActivityOtherComplaint;
 import com.example.punerto.Activity.ActivityMotorVehicleDepartment;
 import com.example.punerto.Activity.ActivityNewProject;
@@ -15,6 +17,7 @@ import com.example.punerto.Activity.ActivityPracticeTest;
 import com.example.punerto.Activity.ActivityRoadSafety;
 import com.example.punerto.Activity.ActivitySchoolBus;
 import com.example.punerto.Activity.ActivityAutoTaxiComplaint;
+import com.example.punerto.Activity.ActivityTaxiFare;
 import com.example.punerto.Activity.ActivityUserManual;
 
 import android.annotation.SuppressLint;
@@ -83,7 +86,8 @@ public class AdapterRtoContent extends BaseAdapter {
 				.findViewById(R.id.img_RtoContent);
 		holder.txt_rtoContentName.setText(rtoContentNameList[position]);
 		holder.img_rtoContentImage.setImageResource(rtoContenImages[position]);
-
+		
+		
 		rowView.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 
@@ -204,37 +208,27 @@ public class AdapterRtoContent extends BaseAdapter {
 
 				case 13:
 
-					Intent intentCredits = new Intent(mContext,
-							ActivityCredits.class);
-					mContext.startActivity(intentCredits);
-					// Intent intenttax = new Intent(mContext,
-					// MainActivity1.class);
-					// mContext.startActivity(intenttax);
-
-					// Intent intenttax = new Intent(mContext,
-					// ActivityTax.class);
-					// mContext.startActivity(intenttax);
-					break;
+							Intent intentCredits = new Intent(mContext,ActivityCredits.class);
+							mContext.startActivity(intentCredits);
+							break;
 				case 14:
+							 
+							 Intent intent15 = new Intent(mContext,ActivityLearnLicAppointment_New.class);
+					 		 mContext.startActivity(intent15);
+					 		 break;
+							
 
-					// Intent intentNewProject = new Intent(mContext,
-					// ActivityNewProject.class);
-					// mContext.startActivity(intentNewProject);
+				case 15:	
+							 Intent intenttaxifare = new Intent(mContext, ActivityTaxiFare.class);
+							 mContext.startActivity(intenttaxifare);
+							 break;
 
-					break;
-
-				case 15:
-
-					// Intent intentSchoolBus = new Intent(mContext,
-					// ActivitySchoolBus.class);
-					// mContext.startActivity(intentSchoolBus);
-					break;
+					 		
 				case 16:
 
-					// Intent intentVideoAnimation = new Intent(mContext,
-					// ActivityAnimationVideo.class);
-					// mContext.startActivity(intentVideoAnimation);
-					break;
+							 Intent intenttaxifare1 = new Intent(mContext, ActivityTaxiFare.class);
+							 mContext.startActivity(intenttaxifare1);
+							 break;
 
 				case 17:
 

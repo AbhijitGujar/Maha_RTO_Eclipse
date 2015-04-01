@@ -1,0 +1,117 @@
+package com.example.punerto.Activity;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import co.example.punerto.classes.RtoDialog;
+
+import com.androidexample.gcm.R;
+
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.EditText;
+import android.widget.RadioGroup;
+import android.widget.Toast;
+
+public class ActivityLearnLicAppointment extends ActionBarActivity 
+{
+	
+	 private List<Map<String, String>> doc_type = new ArrayList<Map<String, String>>();
+	 private List<Map<String, String>> qualification_master = new ArrayList<Map<String, String>>();
+	 private List<Map<String, String>> qualification_master2 = new ArrayList<Map<String, String>>();
+	
+	
+	private RadioGroup radioSexGroup;
+	EditText ll_first_name,ll_middle_name, ll_last_name;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) 
+	{
+		super.onCreate(savedInstanceState);
+		ActionBar actionBar = getSupportActionBar();
+		actionBar.setDisplayHomeAsUpEnabled(true);
+		actionBar.setHomeButtonEnabled(true);
+		actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#7F1616")));
+		if (ActivityLanguage.lang.equals("English")) {
+			setContentView(R.layout.activity_learn_lic_app);
+			
+			actionBar.setTitle(R.string.lltitle);
+		} else {
+			setContentView(R.layout.activity_learn_lic_app);
+			actionBar.setTitle(R.string.lltitle);
+		}
+		actionBar.show();
+		
+		
+		HashMap<String, String> doc = new HashMap<String, String>();
+		doc.put("B", "Psv Badge");
+		doc.put("C", "First Aid Certificate");
+		doc.put("D", "Driving Licence (DL)");
+		doc.put("F", "FIR(First Information Report)");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		doc.put("b", "b");
+		
+		doc_type.add(doc);
+		
+		checkSpecialCharacters( "akjshf aisf oasihfshf sufh &ushfoahs");
+		
+		
+		radioSexGroup = (RadioGroup) findViewById(R.id.radioSex);
+		
+		
+		
+	}
+	
+	public void  checkSpecialCharacters(String strcheck )
+	{
+		
+		Pattern regex = Pattern.compile("[,″&<>′]");
+		Matcher matcher = regex.matcher(strcheck);
+		if (matcher.find())
+		{
+			RtoDialog.showNeutralDialog(ActivityLearnLicAppointment.this,"Form Restrictions","Special Character (″ , & , < , > , ′ ) are not allowed");
+		}
+		else
+		{
+			
+		}
+		
+		
+	}
+	
+	
+	
+	
+	
+}

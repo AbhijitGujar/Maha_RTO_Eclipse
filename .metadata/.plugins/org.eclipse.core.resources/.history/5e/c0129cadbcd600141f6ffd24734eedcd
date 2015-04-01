@@ -1,0 +1,77 @@
+package com.example.punerto.Activity;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import co.example.punerto.classes.RtoDialog;
+
+import com.androidexample.gcm.R;
+
+
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.TabActivity;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.EditText;
+import android.widget.RadioGroup;
+import android.widget.TabHost;
+import android.widget.Toast;
+import android.widget.TabHost.TabSpec;
+
+public class ActivityLearnLicAppointment_New extends TabActivity {
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        
+ TabHost tabHost = getTabHost();
+        
+        // Tab for Photos
+        TabSpec tab1 = tabHost.newTabSpec("1");
+        tab1.setIndicator("Step 1", getResources().getDrawable(R.drawable.icon_photos_tab));
+        Intent photosIntent = new Intent(this, ActivityLearnLicAppointment_Tab1.class);
+        tab1.setContent(photosIntent);
+        
+        // Tab for Songs
+        TabSpec songspec = tabHost.newTabSpec("2");
+        // setting Title and Icon for the Tab
+        songspec.setIndicator("Step 2", getResources().getDrawable(R.drawable.icon_songs_tab));
+        Intent songsIntent = new Intent(this, ActivityLearnLicAppointment_Tab2.class);
+        songspec.setContent(songsIntent);
+        
+        // Tab for Videos
+        TabSpec videospec = tabHost.newTabSpec("3");
+        videospec.setIndicator("Step 3", getResources().getDrawable(R.drawable.icon_videos_tab));
+        Intent videosIntent = new Intent(this, ActivityLearnLicAppointment_Tab2.class);
+        videospec.setContent(videosIntent);
+        
+        TabSpec photospec1 = tabHost.newTabSpec("4");
+        photospec1.setIndicator("Step 4", getResources().getDrawable(R.drawable.icon_photos_tab));
+        Intent photosIntent1 = new Intent(this, ActivityLearnLicAppointment_Tab3.class);
+        photospec1.setContent(photosIntent1);
+        
+        TabSpec photospec2 = tabHost.newTabSpec("5");
+        photospec2.setIndicator("Step 5", getResources().getDrawable(R.drawable.icon_photos_tab));
+        Intent photosIntent2 = new Intent(this, ActivityLearnLicAppointment_Tab4.class);
+        photospec2.setContent(photosIntent2);
+        
+        // Adding all TabSpec to TabHost
+        tabHost.addTab(tab1); // Adding photos tab
+        tabHost.addTab(songspec); // Adding songs tab
+        tabHost.addTab(videospec); // Adding videos tab
+        tabHost.addTab(photospec1);
+        tabHost.addTab(photospec2);
+    }
+}

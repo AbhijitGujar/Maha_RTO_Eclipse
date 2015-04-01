@@ -1,0 +1,101 @@
+package co.example.punerto.classes;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
+
+public class ActivityLearnLicAppointment 
+{
+	
+	public void initializedata()
+	{
+		List<Map<String, String>> proof_code = new ArrayList<Map<String, String>>();
+		List<Map<String, String>> qualification_master = new ArrayList<Map<String, String>>();
+		
+		HashMap<String, String> code = new HashMap<String, String>();
+		code.put("B", "Psv Badge");
+		code.put("C", "First Aid Certificate");
+		code.put("D", "Driving Licence (DL)");
+		code.put("F", "FIR(First Information Report)");
+		code.put("H", "Hill Driving Training Certificate");
+		code.put("I", "International Driving Permit (IDP)");
+		code.put("L", "Learners Licence (LL)");
+		code.put("T", "Driving Training Certificate");
+		code.put("V", "Visa");
+		code.put("Z", "Hazardous Training Certificate");
+		code.put("E", "Age-School/Educational Cert.");
+		code.put("A", "Age-Passport");
+		code.put("1", "Age-Birth Certificate");
+		code.put("2", "Age-Affidavit by Magistrate/Notary Public");
+		code.put("3", "Address-Voter-ID");
+		code.put("P", "Address-Passport");
+		code.put("4", "Address-LIC Policy");
+		code.put("5", "Address-ID Card issued by Central/State Govt");
+		code.put("6", "Address-PaySlip by Central/State Govt/Localbody");
+		code.put("7", "Address-AADHAAR CARD");
+		proof_code.add(code);
+		
+		HashMap<String, String> quali_list = new HashMap<String, String>();
+		quali_list.put("0", "Illiterate");
+		quali_list.put("1", "Not specified");
+		quali_list.put("2", "Below  8th");
+		quali_list.put("3", "8th   PASSED");
+		quali_list.put("4", "10th Class /SSC/ SSLC/CBSE (X)/ICSE (X)");
+		quali_list.put("6", "I T I");
+		quali_list.put("7", "Certificate  course");
+		quali_list.put("10", "+2/Intermediate/ICSE (12th )/CBSE(12th)");
+		quali_list.put("11", "Diploma in Engineering (non Mechanical)");
+		quali_list.put("12", "Diploma in Mechanical Engineering");
+		quali_list.put("13", "Diploma in Other faculties");
+		quali_list.put("14", "DHMS");
+		quali_list.put("30", "B A / BBA / B. Com / B Sc");
+		quali_list.put("31", "Bachelor of  Agriculture / Vet.Sciences");
+		quali_list.put("32", "B E ( other than Mechanical)");
+		quali_list.put("33", "B E (Mechanical)");
+		quali_list.put("34", "MBBS / BHMS / BAMS");
+		quali_list.put("35", "BadgasfaBachelor of Education / Lawsfsfe");
+		quali_list.put("39", "Any Other Graduation Not specified above");
+		quali_list.put("50", "MA / MBA / M.Com / M.SC");
+		quali_list.put("51", "PG Diploma In Science/Arts/Commerce/Mgt");
+		quali_list.put("51", "PG Diploma In Science/Arts/Commerce/Mgt");
+		quali_list.put("52", "PG Diploma In Engineering / Medicine");
+		quali_list.put("53", "M Sc (Agriculture / Vet. Sciences)");
+		quali_list.put("54", "M E ( other than Mechanical )");
+		quali_list.put("55", "M E (Mechanical)");
+		quali_list.put("56", "MS / MD /  MHMS / MAMS / MDS");
+		quali_list.put("57", "Master of Education / Law");
+		quali_list.put("58", "CA / ICWA / ICS – or  equivalent");
+		quali_list.put("59", "Badgasfasfsfe");
+		quali_list.put("Basfsafsf", "Badgasfasfsfe");
+		quali_list.put("Basfsafsf", "Badgasfasfsfe");
+		quali_list.put("Basfsafsf", "Badgasfasfsfe");
+		quali_list.put("Basfsafsf", "Badgasfasfsfe");
+		quali_list.put("Basfsafsf", "Badgasfasfsfe");
+		quali_list.put("Basfsafsf", "Badgasfasfsfe");
+		quali_list.put("Basfsafsf", "Badgasfasfsfe");
+		quali_list.put("Basfsafsf", "Badgasfasfsfe");
+		
+		
+		
+		
+		
+	}
+	public boolean  checkSpecialCharacters(String strcheck )
+	{
+		
+		Pattern regex = Pattern.compile("[,″&<>′]");
+		Matcher matcher = regex.matcher(strcheck);
+		if (matcher.find())
+			return true;
+		else
+			return false;
+		
+		
+	}
+
+}

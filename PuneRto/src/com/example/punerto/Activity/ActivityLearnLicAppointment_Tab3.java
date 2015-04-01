@@ -1,0 +1,55 @@
+package com.example.punerto.Activity;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import co.example.punerto.classes.RtoDialog;
+
+import com.androidexample.gcm.R;
+
+
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.TabActivity;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.EditText;
+import android.widget.RadioGroup;
+import android.widget.TabHost;
+import android.widget.Toast;
+import android.widget.TabHost.TabSpec;
+
+public class ActivityLearnLicAppointment_Tab3 extends Activity {
+	
+	private RadioGroup radioSexGroup;
+	EditText ll_first_name,ll_middle_name, ll_last_name;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) 
+	{
+		super.onCreate(savedInstanceState);
+
+		if (ActivityLanguage.lang.equals("English")) 
+			setContentView(R.layout.activity_learn_lic_app_tab3);
+		else
+			setContentView(R.layout.activity_learn_lic_app_tab3);
+		
+		radioSexGroup = (RadioGroup) findViewById(R.id.radioSex);
+		
+		//RtoDialog.showNeutralDialog(ActivityLearnLicAppointment_Tab1.this,"Form Restrictions","Special Character (″ , & , < , > , ′ ) are not allowed");
+		
+		
+	}
+	
+	
+}
